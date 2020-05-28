@@ -5,7 +5,7 @@ import { SendEmail } from "./send-email";
 
 export class ContactInfo {
   private expertCollectiveURL: string;
-  temp: string = "Contanct Info Temp";
+  temp: string = "Contact Info Temp";
   constructor(private prepEmail: PrepEmail, private sendEmail: SendEmail) {
     const hostname = config.expertCollective.hostname;
     const link = {
@@ -44,13 +44,14 @@ export class ContactInfo {
       to: "support@expertcollective.org",
       // from: userEmail,
       subject: "[ExpertCollectveCoop][Contact] - " + subject,
-      html: "userContact",
+      //html: "userContact",
       context: {
         message:
           message + " | " + userName + " | " + userEmail + " | " + userPhone,
         link: this.expertCollectiveURL,
       },
     };
-    const email = this.prepEmail.addTemplateToEmail("usercontanct", emailPrep);
+    const email = this.prepEmail.addTemplateToEmail("userContact", emailPrep);
+    
   }
 }

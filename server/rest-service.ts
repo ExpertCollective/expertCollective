@@ -4,7 +4,6 @@ import * as bodyParser from "body-parser";
 import { AddressInfo } from "net";
 import setupServices from "./setupServices";
 
-
 const app = express();
 
 app.use("/", express.static(path.join(__dirname, "public")));
@@ -22,7 +21,7 @@ app.post("/api/product", (req, res) => {
 });
 
 // InteractionAPI
-app.post("/api/sendcontact", multipartMiddleware, interRoutes.sendcontact);
+app.post("/api/sendcontact", multipartMiddleware, interRoutes.sendContact);
 
 const server = app.listen(8000, "localhost", () => {
   const { address, port } = server.address() as AddressInfo;

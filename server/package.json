@@ -6,7 +6,8 @@
     "devRest": "node build/rest-service.js",
     "tsc": "tsc",
     "build": "tsc && npm run copy:assets",
-    "copy:assets": "cp -r assets/ build/assets "
+    "copy:assets": "cp -r assets/ build/assets ",
+    "tscRun": "tsc && npm run copy:assets && npm run devRest"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.0",

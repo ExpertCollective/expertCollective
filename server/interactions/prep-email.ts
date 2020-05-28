@@ -32,14 +32,14 @@ export class PrepEmail {
   addTemplateToEmail(filename: string, email) {
     if (email) {
       console.log(
-        "[PrepEmail] addTemplateToEmail (" +
-          email.html +
-          ") from " +
+        "[PrepEmail] addTemplateToEmail from " +
           email.from +
           " to " +
           email.to +
           " with subject: " +
-          email.subject
+          email.subject,
+        " filename: ",
+        filename
       );
       const template = this.getTemplate(filename, email.context);
       if (template) {
@@ -53,26 +53,25 @@ export class PrepEmail {
         return email;
       } else {
         console.log(
-          "[ERROR][emailUtils] something wrong with the email (" +
+          "[ERROR][PrepEmail] something wrong with the email (" +
             email.html +
             ") from: " +
             email.from +
             "- to: " +
             email.to
         );
-        throw "email tempalate not available";
+        throw "email template not available";
       }
     }
   }
 
   getTemplate(filename: string, context) {
-    let res;
     const source = this.emailTemplates[filename];
-
     if (source) {
       const template = handlebars.compile(source);
-      res = template(Object.assign({}, companySettings, context));
+      console.log("[PrepEmail]getTemplate template: ", template)
+      return template(Object.assign({}, companySettings, context));
     }
-    return res;
+    return null;
   }
 }

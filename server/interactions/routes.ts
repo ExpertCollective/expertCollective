@@ -1,11 +1,13 @@
 import { ContactInfo } from "./contact-info";
 export class InteractionRoutes {
   constructor(private contactInfo: ContactInfo) {
-    console.log("InteractionRoutes: " + contactInfo.temp);
-    console.log("InteractionRoutes: this. " + this.contactInfo.temp);
+    console.log("[InteractionRoutes]constructor " + contactInfo.temp);
+    console.log(
+      "[InteractionRoutes]constructor this. " + this.contactInfo.temp
+    );
   }
-  sendcontact = (req, res) => {
-    console.log("sendcontact: ", req.body);
+  sendContact = (req, res) => {
+    console.log("[InteractionRoutes]sendContact body: ", req.body);
     console.log(this.contactInfo.temp);
 
     return this.contactInfo.sendContactInfo(req, res);
