@@ -11,7 +11,6 @@ export default function setupServices() {
   const sendEmail = new SendEmail();
   const prepEmail = new PrepEmail();
   const contactInfo = new ContactInfo(prepEmail, sendEmail);
-  console.log(contactInfo.temp);
   const interRoutes = new InteractionRoutes(contactInfo);
   return {
     multipartMiddleware,
