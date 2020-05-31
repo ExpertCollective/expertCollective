@@ -26,7 +26,8 @@ export class ContactInfo {
   sendContactInfo(req, res) {
     const contactUs = this.verifyContactUsProperties(req.body);
     if (!contactUs) {
-      return res.send({ success: false }); //Bad practice
+      res.status(400)
+      return res.send({ message: "Some parameter is NULL" }); //Bad practice
     }
     let emailPrep: EmailOptions = {
       to: "support@expertcollective.org",
@@ -50,6 +51,7 @@ export class ContactInfo {
       });
     } catch (err) {
       console.error(err);
+      res.status(err.staus || 500);
       res.json({ error: err.message || err });
     }
   }
