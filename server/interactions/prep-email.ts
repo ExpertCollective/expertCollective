@@ -48,41 +48,32 @@ export class PrepEmail {
     );
   }
 
-  addTemplateToEmail(filename: string, email): Mail.Options {
-    if (email) {
-      console.log(
-        "[PrepEmail] addTemplateToEmail from " +
-          email.from +
-          " to " +
-          email.to +
-          " with subject: " +
-          email.subject,
-        " filename: ",
-        filename
+  addTemplateToEmail(filename: string, emailContext: EmailContext): string {
+    if (!emailContext || !emailContext.message) {
+      console.error(
+        !emailContext
+          ? `[ERROR][PrepEmail] addTemplateToEmail missing emailContext! filename: ${filename}`
+          : "[ERROR][PrepEmail] addTemplateToEmail message: " +
+              emailContext.message +
+              " link: " +
+              emailContext.link +
+              " filename: " +
+              filename
       );
-      const htmlVersionOfMessage = this.getTemplate(filename, email.context);
-      if (htmlVersionOfMessage) {
-        const data = new Uint8Array(Buffer.from(htmlVersionOfMessage));
-        fs.writeFile("message.txt", data, (err) => {
-          if (err) throw err;
-          console.log("The file has been saved!");
-        });
+      throw "missing email message";
+    }
+    const htmlVersionOfMessage = this.getTemplate(filename, emailContext);
+    if (htmlVersionOfMessage) {
+      const data = new Uint8Array(Buffer.from(htmlVersionOfMessage));
+      fs.writeFile("message.txt", data, (err) => {
+        if (err) throw err;
+        console.log("The file has been saved!");
+      });
 
-        email.html = htmlVersionOfMessage;
-        return email;
-      }
+      return htmlVersionOfMessage;
     }
     console.error(
-      !email
-        ? "[ERROR][PrepEmail] missing email"
-        : "[ERROR][PrepEmail] something wrong with the email (" +
-            email.subject +
-            ") from: " +
-            email.from +
-            "- to: " +
-            email.to +
-            "Template filename: " +
-            filename
+      `[ERROR][PrepEmail] email template not available: Template filename: ${filename}`
     );
     throw "email template not available";
   }

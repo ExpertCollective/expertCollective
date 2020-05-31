@@ -1,6 +1,6 @@
 import * as url from "url";
 import * as config from "../config/config-int.json";
-import { PrepEmail, EmailOptions } from "./prep-email";
+import { PrepEmail, EmailOptions, EmailContext } from "./prep-email";
 import { SendEmail } from "./send-email";
 
 export type ContactUsProperties = {
@@ -26,29 +26,37 @@ export class ContactInfo {
   sendContactInfo(req, res) {
     const contactUs = this.verifyContactUsProperties(req.body);
     if (!contactUs) {
-      res.status(400)
-      return res.send({ message: "Some parameter is NULL" }); //Bad practice
+      res.status(400);
+      return res.send({ message: "Some parameter is NULL" });
     }
-    let emailPrep: EmailOptions = {
-      to: "support@expertcollective.org",
-      subject: "[ExpertCollectiveCoop][Contact] - " + contactUs.subject,
-      context: {
-        message:
-          contactUs.message +
-          " | " +
-          contactUs.userName +
-          " | " +
-          contactUs.userEmail +
-          " | " +
-          contactUs.userPhone,
-        link: this.expertCollectiveURL,
-      },
+    const emailContext: EmailContext = {
+      message:
+        contactUs.message +
+        " | " +
+        contactUs.userName +
+        " | " +
+        contactUs.userEmail +
+        " | " +
+        contactUs.userPhone,
+      link: this.expertCollectiveURL,
     };
-    const email = this.prepEmail.addTemplateToEmail("userContact", emailPrep);
+    const emailPrep: EmailOptions = {
+      to: config.email.accountSupport,
+      subject: "[ExpertCollectiveCoop][Contact] - " + contactUs.subject,
+      context: emailContext,
+      text: emailContext.message,
+      html: this.prepEmail.addTemplateToEmail("userContact", emailContext),
+    };
     try {
-      this.sendEmail.sendEmail(email).then((data) => {
-        return res.json({ success: true });
-      });
+      this.sendEmail.sendEmail(emailPrep).then(
+        (data) => {
+          return res.json({ success: true });
+        },
+        (error) => {
+          res.status(error.status || 500);
+          return res.json({ error: error });
+        }
+      );
     } catch (err) {
       console.error(err);
       res.status(err.staus || 500);

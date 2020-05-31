@@ -15,7 +15,7 @@ export class SendEmail {
   }
 
   sendEmail(email: Mail.Options): Promise<SentMessageInfo> {
-    console.log("[SendEmail][sendEmail] email: ", email);
+    console.log("[SendEmail][sendEmail] email: ");
     try {
       return this.transporter.sendMail({
         from: email ? email.from : "missingfrom@example.com",

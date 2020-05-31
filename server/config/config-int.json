@@ -12,7 +12,8 @@
     "hostname": "local.admin.ec.org"
   },
   "email": {
-    "accountping": "pings@expertcollective.org"
+    "accountping": "pings@expertcollective.org",
+    "accountSupport": "support@expertcollective.org"
   },
   "youserver": {
     "host": "localhost",
