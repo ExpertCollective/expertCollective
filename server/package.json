@@ -1,0 +1,27 @@
+{
+  "name": "rest-api-services",
+  "description": "Node and Express services for REST calls",
+  "private": true,
+  "scripts": {
+    "devRest": "node build/rest-service.js",
+    "tsc": "tsc",
+    "build": "tsc && npm run copy:assets",
+    "copy:assets": "cp -r assets/ build/assets ",
+    "tscRun": "tsc && npm run copy:assets && npm run devRest"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.16.4",
+    "handlebars": "^4.7.6",
+    "http-errors": "~1.6.2",
+    "nodemailer": "^6.4.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/http-errors": "^1.6.3",
+    "@types/node": "^10.12.18",
+    "@types/nodemailer": "^6.4.0",
+    "typescript": "~3.2.2"
+  }
+}

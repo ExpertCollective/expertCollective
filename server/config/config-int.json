@@ -1,0 +1,27 @@
+{
+  "expertCollective": {
+    "host": "localhost",
+    "port": 80,
+    "protocol": "http",
+    "hostname": "localhost"
+  },
+  "admin": {
+    "host": "local.admin.ec.org",
+    "port": 50,
+    "protocol": "http",
+    "hostname": "local.admin.ec.org"
+  },
+  "email": {
+    "accountping": "pings@expertcollective.org",
+    "accountSupport": "support@expertcollective.org"
+  },
+  "youserver": {
+    "host": "localhost",
+    "port": 9889,
+    "root": "pingstore"
+  },
+  "recaptcha": {
+    "privatekey": "6LdphjwUAAAAAN86wdzUrVFFSFUIV1scQ14uw1Gr",
+    "publickey": "6LdphjwUAAAAAJBey-4WMthuE_cBx3-qYVUOtsWa"
+  }
+}

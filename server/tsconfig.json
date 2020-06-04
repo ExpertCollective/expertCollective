@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "build",
+    "target": "es6",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
+}

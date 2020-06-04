@@ -1,0 +1,12 @@
+{
+  "formmalName": "Expert Collective Cooperative",
+  "companyAddress": {
+    "street": "1 Main Street",
+    "city": "Cambridge",
+    "state": "MA",
+    "zipCode": "",
+    "country": "United States"
+  },
+  "companyURL": "https://expertcollective.org",
+  "supportEmail": "support@expertcollective.org"
+}
