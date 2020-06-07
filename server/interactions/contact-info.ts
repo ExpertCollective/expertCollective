@@ -30,7 +30,7 @@ export class ContactInfo {
   }
 
   sendContactInfo(req, res) {
-    this.logToFile.writeFileToDirectory(this.contactInfoDir, res.body);
+    this.logToFile.writeFileToDirectory(this.contactInfoDir, req.body);
     const contactUs = this.verifyContactUsProperties(req.body);
     if (!contactUs) {
       res.status(400);
