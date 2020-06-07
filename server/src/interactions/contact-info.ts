@@ -3,6 +3,7 @@ import * as config from "../config/config-int.json";
 import { PrepEmail, EmailOptions, EmailContext } from "./prep-email";
 import { SendEmail } from "./send-email";
 import { LogToFile } from "../logging/logToFile";
+import { ContactInfoDto } from "../dto/contactInfoDto";
 
 export type ContactUsProperties = {
   userEmail: string;
@@ -38,18 +39,22 @@ export class ContactInfo {
     }
     const emailContext: EmailContext = {
       message:
-        contactUs.message +
+        contactUs.commentMessage +
         " | " +
-        contactUs.userName +
+        `${contactUs.firstName} ${contactUs.lastName}` +
         " | " +
-        contactUs.userEmail +
+        `${contactUs.jobTitle} of ${contactUs.organization}` +
         " | " +
-        contactUs.userPhone,
+        contactUs.emailAddress +
+        " | " +
+        contactUs.phoneNumber +
+        " | " +
+        contactUs.address,
       link: this.expertCollectiveURL,
     };
     const emailPrep: EmailOptions = {
       to: config.email.accountSupport,
-      subject: "[ExpertCollectiveCoop][Contact] - " + contactUs.subject,
+      subject: `[ExpertCollectiveCoop][Contact] - ${contactUs.organization} ${contactUs.jobTitle} ${contactUs.firstName} ${contactUs.lastName}`,
       context: emailContext,
       text: emailContext.message,
       html: this.prepEmail.addTemplateToEmail("userContact", emailContext),
@@ -72,34 +77,39 @@ export class ContactInfo {
     }
   }
 
-  verifyContactUsProperties(input: any): ContactUsProperties {
-    const contactUs: ContactUsProperties = {
-      userEmail: input.userEmail,
-      userPhone: input.userPhone,
-      userName: input.userName,
-      message: input.message,
-      subject: input.subject,
+  verifyContactUsProperties(input: any): ContactInfoDto {
+    const contactUs: ContactInfoDto = {
+      firstName: input.firstName,
+      lastName: input.lastName,
+      jobTitle: input.jobTitle,
+      organization: input.organization,
+      address: input.address,
+      phoneNumber: input.phoneNumber,
+      emailAddress: input.emailAddress,
+      commentMessage: input.commentMessage,
     };
 
     console.log(
-      "[Messages][emailContactInfo] userEmail: " + contactUs.userEmail
+      `[Messages][emailContactInfo] firstName: ${contactUs.firstName} lastName: ${contactUs.lastName}`
     );
     console.log(
-      "[Messages][emailContactInfo] userPhone: " + contactUs.userPhone
+      `[Messages][emailContactInfo] jobTitle: ${contactUs.jobTitle} of organiztion: ${contactUs.organization}`
     );
-    console.log("[Messages][emailContactInfo] userName: " + contactUs.userName);
-    console.log("[Messages][emailContactInfo] message: " + contactUs.message);
-    console.log("[Messages][emailContactInfo] subject: " + contactUs.subject);
+    console.log(`[Messages][emailContactInfo] address: ${contactUs.address}`);
+    console.log(
+      `[Messages][emailContactInfo] phoneNumber: ${contactUs.phoneNumber}`
+    );
+    console.log(
+      `[Messages][emailContactInfo] emailAddress: ${contactUs.emailAddress}`
+    );
+    console.log(
+      `[Messages][emailContactInfo] commentMessage: ${contactUs.commentMessage}`
+    );
 
     // fix messaging for user
-    if (
-      !contactUs.userEmail ||
-      !contactUs.userName ||
-      !contactUs.message ||
-      !contactUs.subject
-    ) {
+    if (!contactUs.emailAddress) {
       console.log(
-        "[ERROR][Messages][emailSendContact] Some parameter is NULL."
+        "[ERROR][Messages][emailSendContact] Email Address parameter is NULL."
       );
 
       return null;
