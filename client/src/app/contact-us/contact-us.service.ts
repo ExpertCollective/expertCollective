@@ -5,7 +5,7 @@ import {
   HttpErrorResponse,
   HttpHeaders,
 } from "@angular/common/http";
-import { Observable, of } from "rxjs";
+import { Observable, of, Subject, BehaviorSubject } from "rxjs";
 import { map, catchError } from "rxjs/operators";
 
 import { ContactInfoDto } from "../dto/contactInfoDto";
@@ -16,7 +16,7 @@ import { ContactInfoDto } from "../dto/contactInfoDto";
 export class ContactUsService {
   constructor(private httpClient: HttpClient) {}
 
-  contactInfoResponse$: Observable<any>;
+  contactInfoSent$ = new BehaviorSubject<boolean>(false);
 
   sendContactInfo(contactData: any) {
     const contactInfo: ContactInfoDto = {
@@ -29,19 +29,9 @@ export class ContactUsService {
       emailAddress: contactData.emailAddress,
       commentMessage: contactData.tryingToAchieve,
     };
-    console.log(
-      `[ContactUsService] sendContactInfo contactData: ${JSON.stringify(
-        contactInfo,
-        null,
-        2
-      )}`
-    );
 
-    return this.httpClient
-      .post<any>("http://localhost:8000/api/sendcontact/", {
-        headers: new HttpHeaders().set("Content-Type", "application/json"),
-        params: contactInfo,
-      })
+    this.httpClient
+      .post<boolean>("api/sendcontact/", contactInfo)
       .pipe(
         map((data) => {
           console.log(
@@ -51,12 +41,19 @@ export class ContactUsService {
               2
             )}`
           );
-          return data;
+          return data["success"];
         }),
         catchError((err: HttpErrorResponse) => {
           console.log(`Logging Interceptor: ${err.error.message}`);
           return of(new HttpResponse({ body: { message: err.error.message } }));
         })
+      )
+      .subscribe((result) =>
+        this.contactInfoSent$.next(typeof result === "boolean" ? result : false)
       );
+  }
+
+  clearContactInfoSent() {
+    this.contactInfoSent$.next(false);
   }
 }

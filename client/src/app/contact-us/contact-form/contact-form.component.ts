@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { FormBuilder, FormGroup } from "@angular/forms";
-import { ContactInfoDto } from "src/app/dto/contactInfoDto";
 import { ContactUsService } from "../contact-us.service";
 
 @Component({
@@ -9,10 +8,8 @@ import { ContactUsService } from "../contact-us.service";
   styleUrls: ["./contact-form.component.scss"],
 })
 export class ContactFormComponent implements OnInit {
-  @Output() contactInfoSent = new EventEmitter<boolean>();
 
   contactUsForm: FormGroup;
-
   constructor(
     private formBuilder: FormBuilder,
     private contactUsService: ContactUsService
@@ -42,6 +39,5 @@ export class ContactFormComponent implements OnInit {
     );
     this.contactUsService.sendContactInfo(contactData);
     this.contactUsForm.reset();
-    this.contactInfoSent.emit(true);
   }
 }
