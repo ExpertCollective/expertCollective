@@ -107,9 +107,18 @@ export class ContactInfo {
     );
 
     // fix messaging for user
-    if (!contactUs.emailAddress) {
+    if (
+      !contactUs.firstName ||
+      !contactUs.lastName ||
+      !contactUs.jobTitle ||
+      !contactUs.organization ||
+      !contactUs.address ||
+      !contactUs.phoneNumber ||
+      !contactUs.emailAddress ||
+      !contactUs.commentMessage
+    ) {
       console.log(
-        "[ERROR][Messages][emailSendContact] Email Address parameter is NULL."
+        "[ERROR][Messages][emailSendContact] some parameters are NULL."
       );
 
       return null;

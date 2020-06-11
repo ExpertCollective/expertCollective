@@ -19,7 +19,7 @@ export class LogToFile {
   private writeFileToLog(logDirectory: string, input: any) {
     const timeOfMessage = this.getDateTime();
     const fullPath = path.join(logDirectory, `message-${timeOfMessage}.txt`);
-    fs.writeFile(fullPath, JSON.stringify(input), (err) => {
+    fs.writeFile(fullPath, JSON.stringify(input, null, 2), (err) => {
       if (err) throw err;
       console.log(`The file '${fullPath}' has been saved!`);
     });
@@ -28,11 +28,32 @@ export class LogToFile {
   getDateTime() {
     const date = new Date();
     const hour = date.getHours();
+    const hourString = this.convertToString(hour);
     const min = date.getMinutes();
+    const minString = this.convertToString(min);
     const sec = date.getSeconds();
+    const secString = this.convertToString(sec);
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
+    const monthString = this.convertToString(month);
     const day = date.getDate();
-    return year + ":" + month + ":" + day + ":" + hour + ":" + min + ":" + sec;
+    const dayString = this.convertToString(day);
+    return (
+      year +
+      ":" +
+      monthString +
+      ":" +
+      dayString +
+      ":" +
+      hourString +
+      ":" +
+      minString +
+      ":" +
+      secString
+    );
+  }
+
+  private convertToString(timeSegment: number): string {
+    return timeSegment < 10 ? `0${timeSegment}` : timeSegment.toString();
   }
 }
