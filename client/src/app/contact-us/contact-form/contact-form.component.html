@@ -31,6 +31,9 @@
     <label for="emailAddress">{{ 'CONTACT-US.FORM.EMAIL' | translate }}: </label>
     <input id="emailAddress" formControlName="emailAddress" [attr.placeholder]="'CONTACT-US.FORM.EMAIL-PLACEHOLDER' | translate" />
   </div>
+  <div class="text-input">
+    <span class="error-message">{{ errorMessage ? ('CONTACT-US.FORM.MISSING-FIELDS' | translate) : '' }}</span>
+  </div>
   <div class="button">
     <button type="submit">{{ 'CONTACT-US.FORM.SUBMIT' | translate }}</button>
   </div>

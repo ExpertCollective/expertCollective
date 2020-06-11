@@ -9,6 +9,7 @@ import { Observable, of, Subject, BehaviorSubject } from "rxjs";
 import { map, catchError } from "rxjs/operators";
 
 import { ContactInfoDto } from "../dto/contactInfoDto";
+import { successMessageDto } from '../dto/successMessageDto';
 
 @Injectable({
   providedIn: "root",
@@ -30,10 +31,10 @@ export class ContactUsService {
       commentMessage: contactData.tryingToAchieve,
     };
 
-    this.httpClient
-      .post<boolean>("api/sendcontact/", contactInfo)
+    return this.httpClient
+      .post<successMessageDto>("api/sendcontact/", contactInfo)
       .pipe(
-        map((data) => {
+        map((data: successMessageDto) => {
           console.log(
             `[ContactUsService] sendContactInfo data: ${JSON.stringify(
               data,
@@ -41,15 +42,13 @@ export class ContactUsService {
               2
             )}`
           );
-          return data["success"];
+          this.contactInfoSent$.next(data.success)
+          return data.success;
         }),
         catchError((err: HttpErrorResponse) => {
           console.log(`Logging Interceptor: ${err.error.message}`);
           return of(new HttpResponse({ body: { message: err.error.message } }));
         })
-      )
-      .subscribe((result) =>
-        this.contactInfoSent$.next(typeof result === "boolean" ? result : false)
       );
   }
 

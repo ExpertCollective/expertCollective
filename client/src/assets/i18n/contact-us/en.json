@@ -24,6 +24,7 @@
       "WHAT-INTEREST": "What interest you?",
       "TRYING-TO-ACHIEVE": "What are you try to achieve?",
       "TRYING-TO-ACHIEVE-PLACEHOLDER": "Enter your answer here...",
+      "MISSING-FIELDS": "Some fields are missing information",
       "SUBMIT": "Submit"
     }
   }

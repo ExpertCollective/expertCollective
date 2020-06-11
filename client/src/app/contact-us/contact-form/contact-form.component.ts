@@ -8,8 +8,9 @@ import { ContactUsService } from "../contact-us.service";
   styleUrls: ["./contact-form.component.scss"],
 })
 export class ContactFormComponent implements OnInit {
-
   contactUsForm: FormGroup;
+  errorMessage: string;
+
   constructor(
     private formBuilder: FormBuilder,
     private contactUsService: ContactUsService
@@ -37,7 +38,13 @@ export class ContactFormComponent implements OnInit {
         2
       )}`
     );
-    this.contactUsService.sendContactInfo(contactData);
+    this.contactUsService
+      .sendContactInfo(contactData)
+      .subscribe(
+        (result) =>
+          (this.errorMessage =
+            typeof result === "boolean" ? undefined : result.body.message)
+      );
     this.contactUsForm.reset();
   }
 }
