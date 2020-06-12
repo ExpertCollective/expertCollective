@@ -9,6 +9,7 @@
     "FORM": {
       "FIRST-NAME": "Nombre de pila",
       "FIRST-NAME-PLACEHOLDER": "Juan",
+      "FIRST-NAME-REQUIRED": "Se requiere el primer nombre",
       "LAST-NAME": "Apellido",
       "LAST-NAME-PLACEHOLDER": "Smith",
       "TITLE": "Título",

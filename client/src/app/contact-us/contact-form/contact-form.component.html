@@ -1,41 +1,99 @@
-<form [formGroup]="contactUsForm" (ngSubmit)="onSubmit(contactUsForm.value)" class="form">
+<form
+  [formGroup]="contactUsForm"
+  (ngSubmit)="onSubmit(contactUsForm.value)"
+  class="form"
+>
   <div class="text-input">
-    <label for="firstName">{{ 'CONTACT-US.FORM.FIRST-NAME' | translate }}: </label>
-    <input id="firstName" formControlName="firstName"
-      [attr.placeholder]="'CONTACT-US.FORM.FIRST-NAME-PLACEHOLDER' | translate" />
+    <label for="firstName"
+      >{{ "CONTACT-US.FORM.FIRST-NAME" | translate }}:
+    </label>
+    <input
+      id="firstName"
+      name="firstName"
+      formControlName="firstName"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.FIRST-NAME-PLACEHOLDER' | translate"
+    />
+    <div
+      *ngIf="
+        contactUsForm.controls.firstName.invalid &&
+        (contactUsForm.controls.firstName.dirty ||
+          contactUsForm.controls.firstName.touched)
+      "
+    >
+      <div>{{ "CONTACT-US.FORM.FIRST-NAME-REQUIRED" | translate }}</div>
+    </div>
   </div>
   <div class="text-input">
-    <label for="lastName">{{ 'CONTACT-US.FORM.LAST-NAME' | translate }}: </label>
-    <input id="lastName" formControlName="lastName"
-      [attr.placeholder]="'CONTACT-US.FORM.LAST-NAME-PLACEHOLDER' | translate" />
+    <label for="lastName"
+      >{{ "CONTACT-US.FORM.LAST-NAME" | translate }}:
+    </label>
+    <input
+      id="lastName"
+      formControlName="lastName"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.LAST-NAME-PLACEHOLDER' | translate"
+    />
   </div>
   <div class="text-input">
-    <label for="jobTitle">{{ 'CONTACT-US.FORM.TITLE' | translate }}: </label>
-    <input id="jobTitle" formControlName="jobTitle" [attr.placeholder]="'CONTACT-US.FORM.TITLE-PLACEHOLDER' | translate" />
+    <label for="jobTitle">{{ "CONTACT-US.FORM.TITLE" | translate }}: </label>
+    <input
+      id="jobTitle"
+      formControlName="jobTitle"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.TITLE-PLACEHOLDER' | translate"
+    />
   </div>
   <div class="text-input">
-    <label for="organization">{{ 'CONTACT-US.FORM.ORGANIZATION' | translate }}: </label>
-    <input id="organization" formControlName="organization"
-      [attr.placeholder]="'CONTACT-US.FORM.ORGANIZATION-PLACEHOLDER' | translate" />
+    <label for="organization"
+      >{{ "CONTACT-US.FORM.ORGANIZATION" | translate }}:
+    </label>
+    <input
+      id="organization"
+      formControlName="organization"
+      required
+      [attr.placeholder]="
+        'CONTACT-US.FORM.ORGANIZATION-PLACEHOLDER' | translate
+      "
+    />
   </div>
   <div class="text-input address">
-    <label for="address">{{ 'CONTACT-US.FORM.ADDRESS' | translate }}: </label>
-    <input id="address" formControlName="address"
-      [attr.placeholder]="'CONTACT-US.FORM.ADDRESS-PLACEHOLDER' | translate" />
+    <label for="address">{{ "CONTACT-US.FORM.ADDRESS" | translate }}: </label>
+    <input
+      id="address"
+      formControlName="address"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.ADDRESS-PLACEHOLDER' | translate"
+    />
   </div>
   <div class="text-input">
-    <label for="phoneNumber">{{ 'CONTACT-US.FORM.PHONE' | translate }}: </label>
-    <input id="phoneNumber" formControlName="phoneNumber" [attr.placeholder]="'CONTACT-US.FORM.PHONE-PLACEHOLDER' | translate" />
+    <label for="phoneNumber">{{ "CONTACT-US.FORM.PHONE" | translate }}: </label>
+    <input
+      id="phoneNumber"
+      formControlName="phoneNumber"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.PHONE-PLACEHOLDER' | translate"
+    />
   </div>
   <div class="text-input">
-    <label for="emailAddress">{{ 'CONTACT-US.FORM.EMAIL' | translate }}: </label>
-    <input id="emailAddress" formControlName="emailAddress" [attr.placeholder]="'CONTACT-US.FORM.EMAIL-PLACEHOLDER' | translate" />
+    <label for="emailAddress"
+      >{{ "CONTACT-US.FORM.EMAIL" | translate }}:
+    </label>
+    <input
+      id="emailAddress"
+      formControlName="emailAddress"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.EMAIL-PLACEHOLDER' | translate"
+    />
   </div>
   <div class="text-input">
-    <span class="error-message">{{ errorMessage ? ('CONTACT-US.FORM.MISSING-FIELDS' | translate) : '' }}</span>
+    <span class="error-message">{{
+      errorMessage ? ("CONTACT-US.FORM.MISSING-FIELDS" | translate) : ""
+    }}</span>
   </div>
   <div class="button">
-    <button type="submit">{{ 'CONTACT-US.FORM.SUBMIT' | translate }}</button>
+    <button type="submit" [disabled]="!contactUsForm.valid">
+      {{ "CONTACT-US.FORM.SUBMIT" | translate }}
+    </button>
   </div>
-
 </form>

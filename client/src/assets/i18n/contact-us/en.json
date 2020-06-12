@@ -9,6 +9,7 @@
     "FORM": {
       "FIRST-NAME": "First Name",
       "FIRST-NAME-PLACEHOLDER": "John",
+      "FIRST-NAME-REQUIRED": "First Name is required",
       "LAST-NAME": "Last Name",
       "LAST-NAME-PLACEHOLDER": "Smith",
       "TITLE": "Title",
