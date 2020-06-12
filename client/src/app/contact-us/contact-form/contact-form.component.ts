@@ -23,7 +23,7 @@ export class ContactFormComponent implements OnInit {
       address: "",
       phoneNumber: "",
       emailAddress: "",
-      tryingToAchieve: "",
+      commentMessage: "",
     });
   }
 

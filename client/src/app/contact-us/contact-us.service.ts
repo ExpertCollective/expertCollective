@@ -28,7 +28,7 @@ export class ContactUsService {
       address: contactData.address,
       phoneNumber: contactData.phoneNumber,
       emailAddress: contactData.emailAddress,
-      commentMessage: contactData.tryingToAchieve,
+      commentMessage: contactData.commentMessage,
     };
 
     return this.httpClient
