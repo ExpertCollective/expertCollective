@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ContactUsService } from '../contact-us.service';
 
 @Component({
   selector: 'app-contact-sent',
@@ -6,14 +7,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./contact-sent.component.scss']
 })
 export class ContactSentComponent implements OnInit {
-  @Output() contactInfoSent = new EventEmitter<boolean>();
 
-  constructor() { }
+  constructor(private contactUsService: ContactUsService) { }
 
   ngOnInit() {
   }
 
   onClickBack() {
-    this.contactInfoSent.emit(false);
+    this.contactUsService.clearContactInfoSent();
   }
 }

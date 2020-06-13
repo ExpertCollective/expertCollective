@@ -8,11 +8,11 @@
   <div class="main">
     <h1>{{ 'CONTACT-US.HEADER' | translate }}</h1>
     <p class="explanation">{{ 'CONTACT-US.EXPLANATION' | translate }}</p>
-    <div *ngIf="!contactInfoSent">
-      <app-contact-form (contactInfoSent)="onDisplayChange($event)"></app-contact-form>
+    <div *ngIf="!(contactInfoSent$ | async)">
+      <app-contact-form></app-contact-form>
     </div>
-    <div *ngIf="contactInfoSent">
-      <app-contact-sent (contactInfoSent)="onDisplayChange($event)"></app-contact-sent>
+    <div *ngIf="(contactInfoSent$ | async)">
+      <app-contact-sent></app-contact-sent>
     </div>
   </div>
 </div>

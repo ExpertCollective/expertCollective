@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as handlebars from "handlebars";
 import * as companySettings from "../settings/company-info.json";
+import * as deploymentSettings from "../settings/deployment.json"
 import Mail = require("nodemailer/lib/mailer");
 import { Address } from "nodemailer/lib/mailer";
 
@@ -32,7 +33,7 @@ export class PrepEmail {
 
   loadTemplates(filename) {
     fs.readFile(
-      "./assets/templates/" + filename + ".hbs",
+      `./${deploymentSettings.distFolder}/assets/templates/${filename}.hbs`,
       (err: NodeJS.ErrnoException, data: Buffer) => {
         if (err) {
           console.log(
