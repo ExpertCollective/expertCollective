@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /* Global Styles */
 
-
+@import "./element/page";
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", "Open Sans", sans-serif;
+  background-color: $pageBackgroundColor;
 }
