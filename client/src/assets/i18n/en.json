@@ -2,13 +2,14 @@
     "APP": {
         "HEADER": {
             "LOGO": "Expert Collective",
-            "SCREEN-READER": " - Home Page",
-            "MENUNAV": {
-                "ADVISORY": "Advisory",
-                "PRAXIS": "Praxis",
-                "VENTURES": "Ventures",
-                "CONTACT-US": "Contact Us"
-            }
+            "SCREEN-READER": " - Home Page"
+        },
+        "NAVBAR": {
+            "ADVISORY": "Advisory",
+            "PRAXIS": "Praxis",
+            "VENTURES": "Ventures",
+            "CONTACT-US": "Contact",
+            "ABOUT-US": "About"
         },
         "HOME": {
             "HEADER": "Knowledge Applied",

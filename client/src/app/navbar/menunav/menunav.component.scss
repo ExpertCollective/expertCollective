@@ -1,25 +1,21 @@
+@import "../../../styles/base/palette";
+
 .menu-nav {
   display: flex;
   flex-direction: row;
   a {
-    // float: left;
-    // display: block;
-    padding-top: 10px;
     padding-right: 15px;
-    padding-bottom: 10px;
     padding-left: 15px;
+    color: $creamyWhite;
     line-height: 20px;
     text-decoration: none;
-    // text-align: center;
-    color: white;
   }
   .active-link {
-    background-color: white;
-    color: black;
+    color: $lightBlue;
   }
 }
 @media screen and (max-width: 575px) {
-  .menu-nav  {
+  .menu-nav {
     display: none;
     flex-direction: column;
   }

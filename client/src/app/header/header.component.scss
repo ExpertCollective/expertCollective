@@ -1,23 +1,22 @@
-
+@import "../../styles/base/palette";
 
 .top-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  background-color: black;
-  color: white;
+  background-color: $creamyWhite;
+  color: $darkGray;
+  text-transform: uppercase;
   padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-left: 25px;
+  padding-bottom: 20px;
+  padding-left: 30px;
   height: 60px;
   .logo {
     font-size: 2rem;
     font-weight: 200;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
     a {
       text-decoration: none;
-      color: white;
+      color: $darkGray;
     }
     .screen-reader {
       border: 0;
@@ -29,29 +28,5 @@
       width: 1px;
       word-wrap: normal;
     }
-  }
-  .icon {
-    display: none;
-    border: 0;
-    background-color: black;
-    color: white;
-    font-size: x-large;
-  }
-}
-@media screen and (max-width: 575px) {
-  .top-header .icon {
-    display: block;
-  }
-}
-@media screen and (max-width: 575px) {
-  .top-header.responsive-open {
-    display: flex;
-    flex-direction: column;
-    min-height: 205px;
-  }
-  .top-header.responsive-open .icon {
-    position: absolute;
-    right: 33px;
-    top: 35px;
   }
 }

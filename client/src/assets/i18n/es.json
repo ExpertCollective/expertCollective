@@ -3,12 +3,13 @@
         "HEADER": {
             "LOGO": "Expert Collective Cooperative",
             "SCREEN-READER": "Home",
-            "MENUNAV": {
-                "ADVISORY": "Asesoría",
-                "PRAXIS": "Práctica",
-                "VENTURES": "Startups",
-                "CONTACT-US": "Contáctanos"
-            }
+        },
+        "NAVBAR": {
+            "ADVISORY": "Asesoría",
+            "PRAXIS": "Práctica",
+            "VENTURES": "Startups",
+            "CONTACT-US": "Contáctanos",
+            "ABOUT-US": "Acerca"
         },
         "HOME": {
             "HEADER": "Conocimiento Aplicado",

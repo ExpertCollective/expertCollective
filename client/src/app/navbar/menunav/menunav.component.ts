@@ -9,7 +9,7 @@ export class MenunavComponent implements OnInit {
   @Input() isResponsiveOpen: boolean;
 
   navLinks: string[] = [
-    "advisory", "praxis", "ventures", "contact-us"
+    "advisory", "praxis", "ventures", "contact-us", "about-us"
   ]
 
   constructor() { }
