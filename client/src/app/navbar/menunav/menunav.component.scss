@@ -22,10 +22,9 @@
   .menu-nav.responsive-open {
     display: flex;
     flex-direction: column;
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
-  // .nav-link.responsive-open {
-  //   float: none;
-  //   display: block;
-  //   text-align: left;
-  // }
 }

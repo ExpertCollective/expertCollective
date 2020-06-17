@@ -2,7 +2,7 @@
     "APP": {
         "HEADER": {
             "LOGO": "Expert Collective Cooperative",
-            "SCREEN-READER": "Home",
+            "SCREEN-READER": "Home"
         },
         "NAVBAR": {
             "ADVISORY": "Asesoría",
