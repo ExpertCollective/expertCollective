@@ -1,7 +1,11 @@
 {
     "APP": {
         "HEADER": {
-            "LOGO": "Expert Collective",
+            "LOGO": {
+               "NAME": "Expert Collective",
+               "COOPERATIVE": "Cooperative",
+               "TAGLINE": "a resource, a mindset, a catalyst"
+            },
             "SCREEN-READER": " - Home Page"
         },
         "NAVBAR": {
