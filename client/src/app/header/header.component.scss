@@ -8,6 +8,7 @@
   padding-left: 30px;
   .logo {
     a {
+      width: fit-content;
       text-decoration: none;
       color: $darkGray;
       display: grid;
@@ -29,13 +30,11 @@
         align-self: end;
         padding-bottom: 11px;
         padding-left: 11px;
-
       }
 
       .logo-tagline {
         font-size: 21px;
         padding-left: 20px;
-
       }
 
       .screen-reader {

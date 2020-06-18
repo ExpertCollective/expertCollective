@@ -2,11 +2,16 @@
 /* Global Styles */
 
 @import "./element/page";
+@import "./base/palette";
 
 html, body {
   width: 100%;
   height: 100%;
   font-family: "Helvetica Neue", "Open Sans", sans-serif;
   background-color: $pageBackgroundColor;
+  color: $pageDefaultColor;
   margin: 0px;
+  h1 {
+    color: $pageHeaderColor;
+  }
 }
