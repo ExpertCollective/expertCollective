@@ -4,12 +4,12 @@
             "HOME": "Expert Collective",
             "CURRENT-PAGE": "Advisory"
         },
-        "HEADER": "We support business and technology leaders drive value in their organizations through clear lines of accountability.",
+        "HEADER": "Get expert advice on how to digitally transform your company.",
         "QUOTE": "Experts from the collective helped us transform our culture to one where learning leads to change.",
         "WHAT-WE-KNOW": {
             "HEADER": "What we know",
             "DIGITAL-BUSINESS-TRANSFORMATION": "Digital Business Transormation and Data Science",
-            "INNOVATION-MANAGEMENT": "Innovation Management",
+            "INNOVATION-MANAGEMENT": "Digital Innovation Management",
             "NEW-VENTURE-FORMATION": "New Venture Formation and Management"
         },
         "INDUSTRIES-WE-SERVE": {
@@ -27,7 +27,7 @@
                 "CURRENT-PAGE": "Digital Business Transformation"
             },
             "HEADER": "Digital Business Transformation Experts",
-            "EXPLANATION": "We help organizational leaders take control of digital disruption.",
+            "EXPLANATION": "Lead digital disruption.",
             "BLOCKCHAIN": {
                 "HEADER": "Blockchain",
                 "PUBLIC-PRIVATE": "Use of public/private chains",
@@ -63,10 +63,10 @@
             "BREADCRUMB": {
                 "HOME": "Expert Collective",
                 "ADVISORY": "Advisory",
-                "CURRENT-PAGE": "Innovation Management"
+                "CURRENT-PAGE": "Digital Innovation Management"
             },
-            "HEADER": "Innovation Management",
-            "EXPLANATION": "Enabling new thinking that leads to breakthroughs.",
+            "HEADER": "Digital Innovation Management",
+            "EXPLANATION": "Anticipate the next radical digital transformation.",
             "R-D-PIPELINES": {
                 "HEADER": "R&D Pipelines",
                 "PROJECT-IDENTIFICATION": "Project identification and generation",
@@ -93,7 +93,7 @@
                 "CURRENT-PAGE": "Venture Formation"
             },
             "HEADER": "New Ventures",
-            "EXPLANATION": "Founder-focused coaching for building effective teams.",
+            "EXPLANATION": "Build successful launchpads for your startups.",
             "BUSINESS-DEVELOPMENT": {
                 "HEADER": "Business Development",
                 "SALES-TEAM-MANAGEMENT": "Sales team management",
