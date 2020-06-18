@@ -162,5 +162,8 @@
       }
     }
   },
-  "defaultProject": "expert-collective"
+  "defaultProject": "expert-collective",
+  "cli": {
+    "analytics": false
+  }
 }

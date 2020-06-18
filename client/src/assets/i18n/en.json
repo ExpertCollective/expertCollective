@@ -16,14 +16,14 @@
             "ABOUT-US": "About"
         },
         "HOME": {
-            "HEADER": "Knowledge Applied",
-            "EXPLANATION": "We pursue our mission through three distinct yet integrated strategies:",
+            "HEADER": "Applied Knowledge",
+            "EXPLANATION": "We make your passion come to life.",
             "ADVISORY": "Advisory",
-            "SUPPORT-SCIENTIST-ENTREPRENEURS": "Support by connecting Scientists and Entrepreneurs in the process of  forming and running their companies.",
+            "SUPPORT-SCIENTIST-ENTREPRENEURS": "Get expert advice on how to digitally transform your company.",
             "PRAXIS": "Praxis",
-            "CODIFY-EXPERT-KNOWLEDGE": "Codify and Package Expert Knowledge into easy to digest learning experiences for anyone curious about technology and business.",
+            "CODIFY-EXPERT-KNOWLEDGE": "Learn-to-do digital transformation.",
             "VENTURES": "Ventures",
-            "BRING-CAPITAL": "We bring capital to support people who want to contribute their knowledge to society through the formation of new enterprises and cooperatives.",
+            "BRING-CAPITAL": "Turn your knowledge into a new venture.",
             "HELLO": "hello {{value}}"
         },
         "FOOTER": {
@@ -32,7 +32,7 @@
         },
         "ABOUT-US": {
             "HEADER": "About Us",
-            "EXPLANATION": "Expert Collective Cooperative is a member owned coop that seeks to bridge the gap between entrepreneurs and academic experts.  We strive to allow access to top Experts in cutting edge fields to the business community that can fund and implement those breakthroughs."
+            "EXPLANATION": "Expert Collective Cooperative is a worker-owned coop focused on accelerating digitial transformation of businesses."
         }
     }
 }
