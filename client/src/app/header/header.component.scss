@@ -1,55 +1,52 @@
-.top-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  background-color: black;
-  color: white;
+@import "../../styles/base/palette";
+
+:host {
+  background-color: $creamyWhite;
+  color: $darkGray;
   padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-left: 25px;
-  height: 60px;
+  padding-bottom: 20px;
+  padding-left: 30px;
   .logo {
-    font-size: 2rem;
-    font-weight: 200;
     a {
+      width: fit-content;
       text-decoration: none;
-      color: white;
+      color: $darkGray;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      justify-content: left;
+
+      .logo-name {
+        text-transform: uppercase;
+        font-size: 36px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+      }
+
+      .logo-cooperative {
+        text-transform: uppercase;
+        font-size: 24px;
+        align-self: end;
+        padding-bottom: 11px;
+        padding-left: 11px;
+      }
+
+      .logo-tagline {
+        font-size: 21px;
+        padding-left: 20px;
+      }
+
+      .screen-reader {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+      }
     }
-    .screen-reader {
-      border: 0;
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-      word-wrap: normal;
-    }
-  }
-  .icon {
-    display: none;
-    border: 0;
-    background-color: black;
-    color: white;
-    font-size: x-large;
-  }
-}
-@media screen and (max-width: 575px) {
-  .top-header .icon {
-    display: block;
-  }
-}
-@media screen and (max-width: 575px) {
-  .top-header.responsive-open {
-    display: flex;
-    flex-direction: column;
-    min-height: 205px;
-  }
-  .top-header.responsive-open .icon {
-    position: absolute;
-    right: 33px;
-    top: 35px;
   }
 }

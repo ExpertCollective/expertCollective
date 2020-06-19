@@ -1,0 +1,24 @@
+@import "../../styles/base/palette";
+
+.navbar {
+  display: grid;
+  grid-template: " menu-nav icon";
+  background-color: $midGray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  .icon {
+    display: none;
+    align-self: start;
+    justify-self: right;
+    border: 0;
+    background-color: $midGray;
+    color: $creamyWhite;
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 575px) {
+  .navbar .icon {
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../styles/base/palette";
+
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  a {
+    padding-right: 70px;
+    color: $creamyWhite;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .active-link {
+    color: $lightBlue;
+  }
+}
+@media screen and (max-width: 575px) {
+  .menu-nav {
+    display: none;
+    flex-direction: column;
+  }
+  .menu-nav.responsive-open {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

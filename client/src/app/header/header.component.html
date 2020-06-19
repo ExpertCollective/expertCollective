@@ -1,12 +1,8 @@
-<header [ngClass]="{ 'top-header': true, 'responsive-open': isResponsiveOpen }">
-    <div class="logo">
-        <a href="/">
-            {{ 'APP.HEADER.LOGO' | uppercase | translate }}
-            <span class="screen-reader">{{ 'APP.HEADER.SCREEN-READER' | uppercase | translate }}</span>
-        </a>
-    </div>
-    <app-menunav [isResponsiveOpen]="isResponsiveOpen"></app-menunav>
-    <button id="menuBars" class="icon" (click)="onMenuBarsClick()">
-        <i class="fa fa-bars"></i>
-    </button>
-</header>
+<div class="logo">
+    <a href="/">
+        <div class="logo-name">{{ 'APP.HEADER.LOGO.NAME' | translate }}</div>
+        <div class="logo-cooperative">{{ 'APP.HEADER.LOGO.COOPERATIVE' | translate }}</div>
+        <div class="logo-tagline">{{ 'APP.HEADER.LOGO.TAGLINE' | translate }}</div>
+        <span class="screen-reader">{{ 'APP.HEADER.SCREEN-READER' | translate }}</span>
+    </a>
+</div>

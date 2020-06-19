@@ -1,14 +1,19 @@
 {
     "APP": {
         "HEADER": {
-            "LOGO": "Expert Collective",
-            "SCREEN-READER": " - Home Page",
-            "MENUNAV": {
-                "ADVISORY": "Advisory",
-                "PRAXIS": "Praxis",
-                "VENTURES": "Ventures",
-                "CONTACT-US": "Contact Us"
-            }
+            "LOGO": {
+               "NAME": "Expert Collective",
+               "COOPERATIVE": "Cooperative",
+               "TAGLINE": "a resource, a mindset, a catalyst"
+            },
+            "SCREEN-READER": " - Home Page"
+        },
+        "NAVBAR": {
+            "ADVISORY": "Advisory",
+            "PRAXIS": "Praxis",
+            "VENTURES": "Ventures",
+            "CONTACT-US": "Contact",
+            "ABOUT-US": "About"
         },
         "HOME": {
             "HEADER": "Applied Knowledge",
@@ -27,7 +32,16 @@
         },
         "ABOUT-US": {
             "HEADER": "About Us",
-            "EXPLANATION": "Expert Collective Cooperative is a worker-owned coop focused on accelerating digitial transformation of businesses."
+            "CONTENT": "We provide the relationships and knowledge to transform your passion and visionary ideas into value-centered ventures.",
+            "CONTENT-LABEL": "We empower you through 3 distinct yet integrated strategies:",
+            "YOUR-PASSIONS-IDEAS": "YOUR PASSIONS & IDEAS",
+            "ADVISORY": "Advisory",
+            "CONNECT-SCIENTIST-ENTERPRENUERS": "Connect with scientists and enterprenuers",
+            "PRAXIS": "Praxis",
+            "CODIFY-PACKAGE": "Codify & package your knowledge for others to learn",
+            "VENTURES": "Ventures",
+            "GET-CAPITAL": "Get capital to form new cooperatives & enterprises",
+            "EXPLANATION": "The Expert Collective cooperative is a member-owned coop that seeks to bridge the gap between entrepreneurs and academic experts. We strive to allow access to top Experts in cutting edge fields to the business community that can fund and implement those breakthroughs."
         }
     }
 }

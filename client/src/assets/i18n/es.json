@@ -1,14 +1,19 @@
 {
     "APP": {
         "HEADER": {
-            "LOGO": "Expert Collective Cooperative",
-            "SCREEN-READER": "Home",
-            "MENUNAV": {
-                "ADVISORY": "Asesoría",
-                "PRAXIS": "Práctica",
-                "VENTURES": "Startups",
-                "CONTACT-US": "Contáctanos"
-            }
+            "LOGO": {
+                "NAME": "Expert Collective",
+                "COOPERATIVE": "Cooperative",
+                "TAGLINE": "un recurso, una mentalidad, un catalizador"
+             },
+            "SCREEN-READER": " - Página de inicio"
+        },
+        "NAVBAR": {
+            "ADVISORY": "Asesoría",
+            "PRAXIS": "Práctica",
+            "VENTURES": "Startups",
+            "CONTACT-US": "Contáctanos",
+            "ABOUT-US": "Acerca"
         },
         "HOME": {
             "HEADER": "Conocimiento Aplicado",
@@ -24,6 +29,18 @@
         "FOOTER": {
             "ABOUT-US": "Acerca",
             "CONTACT-US": "Hablemos"
+        },
+        "ABOUT-US": {
+            "HEADER": "Acerca",
+            "CONTENT": "",
+            "CONTENT-LABEL": "",
+            "ADVISORY": "Advisory",
+            "CONNECT-SCIENTIST-ENTERPRENUERS": "Connect with scientists and enterprenuers",
+            "PRAXIS": "Praxis",
+            "CODIFY-PACKAGE": "Codify & package your knowledge for others to learn",
+            "VENTURES": "Ventures",
+            "GET-CAPITAL": "Get capital to form new cooperatives & enterprises",
+            "EXPLANATION": "La cooperativa Expert Collective es una cooperativa propiedad de miembros que busca cerrar la brecha entre empresarios y expertos académicos. Nos esforzamos por permitir el acceso a los mejores expertos en campos de vanguardia a la comunidad empresarial que puede financiar e implementar esos avances."
         }
     }
 }
