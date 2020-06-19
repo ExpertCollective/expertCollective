@@ -11,9 +11,9 @@
     " content            content            content            " auto
     " content-label      content-label      content-label      " auto
     " your-passion-ideas your-passion-ideas your-passion-ideas " 100px
-    " advisory           praxis             ventures           " 100px
-    " advisory           praxis             ventures           " 100px
-    " advisory           praxis             ventures           " 100px
+    " advisory           praxis             ventures           " 150px
+    " advisory           praxis             ventures           " 150px
+    " advisory           praxis             ventures           " 150px
     " statement          statement          statement          " 200px
     / 280px              280px              280px              ;
   justify-content: center;
@@ -42,44 +42,46 @@
     display: grid;
     place-content: center;
   }
-  .advisory {
-    grid-area: advisory;
+
+  %column {
     background-color: $lightGray;
     color: $creamyWhite;
     display: grid;
     justify-items: center;
+    align-content: start;
     padding-top: 50px;
-    margin-right: 15px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    font-size: 24px;
+    font-weight: lighter;
     .title {
       font-size: 36px;
       font-weight: normal; 
+      margin-bottom: 50px;
     }
+  }
+
+  %between-columns {
+    margin-right: 15px;
+  }
+
+  .advisory {
+    grid-area: advisory;
+    @extend %column;
+    @extend %between-columns;
   }
   .praxis {
     grid-area: praxis;
-    background-color: $lightGray;
-    color: $creamyWhite;
-    display: grid;
-    justify-items: center;
-    padding-top: 50px;
-    margin-right: 15px;
-    .title {
-      font-size: 36px;
-      font-weight: normal; 
-    }
+    @extend %column;
+    @extend %between-columns;
   }
+
   .ventures {
     grid-area: ventures;
-    background-color: $lightGray;
-    color: $creamyWhite;
-    display: grid;
-    justify-items: center;
-    padding-top: 50px;
-    .title {
-      font-size: 36px;
-      font-weight: normal; 
-    }
+    @extend %column;
   }
+
   .statement {
     grid-area: statement;
     font-size: 24px;
