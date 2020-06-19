@@ -1,19 +1,88 @@
+@import "../../styles/base/palette";
+
 :host {
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   display: grid;
+  grid-gap: 10px;
   grid-template:
-    " header    header    header    " auto
-    " statement statement statement " auto
-    / auto      auto      auto            ;
-  justify-items: center;
+    " header             header             header             " auto
+    " content            content            content            " auto
+    " content-label      content-label      content-label      " auto
+    " your-passion-ideas your-passion-ideas your-passion-ideas " 100px
+    " advisory           praxis             ventures           " 100px
+    " advisory           praxis             ventures           " 100px
+    " advisory           praxis             ventures           " 100px
+    " statement          statement          statement          " 200px
+    / 280px              280px              280px              ;
+  justify-content: center;
 
   h1 {
     grid-area: header;
   }
 
+  .content {
+    grid-area: content;
+    font-size: 32px;
+    font-weight: normal;
+  }
+
+  .content-label {
+    grid-area: content-label;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  .your-passion-ideas {
+    grid-area: your-passion-ideas;
+    background-color: $lightGray;
+    color: $creamyWhite;
+    font-size: 36px;
+    font-weight: lighter;
+    display: grid;
+    place-content: center;
+  }
+  .advisory {
+    grid-area: advisory;
+    background-color: $lightGray;
+    color: $creamyWhite;
+    display: grid;
+    justify-items: center;
+    padding-top: 50px;
+    margin-right: 15px;
+    .title {
+      font-size: 36px;
+      font-weight: normal; 
+    }
+  }
+  .praxis {
+    grid-area: praxis;
+    background-color: $lightGray;
+    color: $creamyWhite;
+    display: grid;
+    justify-items: center;
+    padding-top: 50px;
+    margin-right: 15px;
+    .title {
+      font-size: 36px;
+      font-weight: normal; 
+    }
+  }
+  .ventures {
+    grid-area: ventures;
+    background-color: $lightGray;
+    color: $creamyWhite;
+    display: grid;
+    justify-items: center;
+    padding-top: 50px;
+    .title {
+      font-size: 36px;
+      font-weight: normal; 
+    }
+  }
   .statement {
     grid-area: statement;
+    font-size: 24px;
   }
+
 }

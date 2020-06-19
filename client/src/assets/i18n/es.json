@@ -29,6 +29,18 @@
         "FOOTER": {
             "ABOUT-US": "Acerca",
             "CONTACT-US": "Hablemos"
+        },
+        "ABOUT-US": {
+            "HEADER": "Acerca",
+            "CONTENT": "",
+            "CONTENT-LABEL": "",
+            "ADVISORY": "Advisory",
+            "CONNECT-SCIENTIST-ENTERPRENUERS": "Connect with scientists and enterprenuers",
+            "PRAXIS": "Praxis",
+            "CODIFY-PACKAGE": "Codify & package your knowledge for others to learn",
+            "VENTURES": "Ventures",
+            "GET-CAPITAL": "Get capital to form new cooperatives & enterprises",
+            "EXPLANATION": "La cooperativa Expert Collective es una cooperativa propiedad de miembros que busca cerrar la brecha entre empresarios y expertos académicos. Nos esforzamos por permitir el acceso a los mejores expertos en campos de vanguardia a la comunidad empresarial que puede financiar e implementar esos avances."
         }
     }
 }
