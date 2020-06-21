@@ -1,26 +1,24 @@
-.contact-us {
-  .breadcrumb {
-    a {
-      color: black;
-    }
+:host {
+  display: grid;
+  justify-items: center;
+  h1 {
+    margin-top: 0px;
+    padding-top: 200px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
   }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      padding-right: 50px;
-      padding-bottom: 20px;
-      padding-left: 50px;
-    }
-    .explanation {
-      padding-top: 30px;
-      padding-right: 20px;
-      padding-bottom: 30px;
-      padding-left: 20px;
-      margin: 20px;
-      text-align: center;
-      font-size: x-large;
-    }
+  .explanation {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 32px;
+  }
+  div {
+    display: grid;
+    justify-items: center;
   }
 }

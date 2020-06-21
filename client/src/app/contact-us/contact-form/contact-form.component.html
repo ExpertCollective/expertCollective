@@ -1,8 +1,4 @@
-<form
-  [formGroup]="contactUsForm"
-  (ngSubmit)="onSubmit(contactUsForm.value)"
-  class="form"
->
+<form [formGroup]="contactUsForm" (ngSubmit)="onSubmit(contactUsForm.value)">
   <div class="text-input">
     <label for="firstName"
       >{{ "CONTACT-US.FORM.FIRST-NAME" | translate }}:
@@ -91,26 +87,6 @@
       </div>
     </div>
   </div>
-  <div class="text-input both-columns">
-    <label for="address">{{ "CONTACT-US.FORM.ADDRESS" | translate }}: </label>
-    <input
-      id="address"
-      formControlName="address"
-      required
-      [attr.placeholder]="'CONTACT-US.FORM.ADDRESS-PLACEHOLDER' | translate"
-    />
-    <div
-      *ngIf="
-        contactUsForm.controls.address.invalid &&
-        (contactUsForm.controls.address.dirty ||
-          contactUsForm.controls.address.touched)
-      "
-    >
-      <div class="error-message">
-        {{ "CONTACT-US.FORM.ADDRESS-REQUIRED" | translate }}
-      </div>
-    </div>
-  </div>
   <div class="text-input">
     <label for="phoneNumber">{{ "CONTACT-US.FORM.PHONE" | translate }}: </label>
     <input
@@ -156,6 +132,26 @@
     </div>
   </div>
   <div class="text-input both-columns">
+    <label for="address">{{ "CONTACT-US.FORM.ADDRESS" | translate }}: </label>
+    <input
+      id="address"
+      formControlName="address"
+      required
+      [attr.placeholder]="'CONTACT-US.FORM.ADDRESS-PLACEHOLDER' | translate"
+    />
+    <div
+      *ngIf="
+        contactUsForm.controls.address.invalid &&
+        (contactUsForm.controls.address.dirty ||
+          contactUsForm.controls.address.touched)
+      "
+    >
+      <div class="error-message">
+        {{ "CONTACT-US.FORM.ADDRESS-REQUIRED" | translate }}
+      </div>
+    </div>
+  </div>
+  <div class="text-input both-columns">
     <label for="commentMessage"
       >{{ "CONTACT-US.FORM.TRYING-TO-ACHIEVE" | translate }}:
     </label>
@@ -163,7 +159,9 @@
       id="commentMessage"
       formControlName="commentMessage"
       required
-      [attr.placeholder]="'CONTACT-US.FORM.TRYING-TO-ACHIEVE-PLACEHOLDER' | translate"
+      [attr.placeholder]="
+        'CONTACT-US.FORM.TRYING-TO-ACHIEVE-PLACEHOLDER' | translate
+      "
     ></textarea>
     <div
       *ngIf="
@@ -177,14 +175,14 @@
       </div>
     </div>
   </div>
-  <div class="text-input">
+  <div class="submit both-columns">
+      <button type="submit" [disabled]="!contactUsForm.valid">
+        {{ "CONTACT-US.FORM.SUBMIT" | translate }}
+      </button>
+  </div>
+  <div class="both-columns">
     <span class="error-message">{{
       errorMessage ? ("CONTACT-US.FORM.MISSING-FIELDS" | translate) : ""
     }}</span>
-  </div>
-  <div class="button">
-    <button type="submit" [disabled]="!contactUsForm.valid">
-      {{ "CONTACT-US.FORM.SUBMIT" | translate }}
-    </button>
   </div>
 </form>
