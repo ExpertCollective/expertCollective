@@ -1,20 +1,51 @@
 @import "../../../styles/base/palette";
+@import "../../../styles/element/form";
 
 form {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: repeat(7, 1fr);
-  color: $creamyWhite;
+  color: $formDefaultColor;
   font-size: 21px;
+  justify-content: center;
 
   .text-input {
     display: flex;
     flex-direction: column;
+
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // margin-top: 20px;
+    // margin-right: 60px;
+    // margin-bottom: 40px;
+
+
     padding-top: 5px;
-    padding-right: 10px;
+    padding-right: 40px;
     padding-bottom: 5px;
-    padding-left: 10px;
-    background-color: $midGray;
+    padding-left: 40px;
+    background-color: $formBackgroundColor;
+
+    %input-format {
+      // width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 0px;
+      margin-top: 20px;
+      margin-right: 0px;
+      // margin-bottom: 40px;
+    }
+    input {
+      @extend %input-format;
+
+    }
+    textarea {
+      @extend %input-format;
+      border: 1px outset $formBackgroundColor;
+    }
   }
 
   .both-columns {
@@ -23,13 +54,17 @@ form {
 
   .submit {
     place-self: center;
+    width: 100%;
     button {
-      margin-right: 10px;
+      width: 100%;
+      font-size: 36px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
   }
 
   .error-message {
-    color: red;
+    color: $errorMessagingColor;
   }
 }
 @media screen and (max-width: 575px) {
