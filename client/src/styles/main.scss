@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 /* Global Styles */
 
+// @font-face {
+//   font-family: "EcHelvetica";
+//   src: url(../assets/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 66\ Medium\ It/)
+//   // src: url(../assets/Helvetica-Font/Helvetica.ttf) format("truetype"),
+//   //   url(../assets/Helvetica-Font/Helvetica-Bold.ttf) format("truetype");
+  
+// }
+
 @import "./element/page";
 @import "./element/form";
 @import "./base/palette";
@@ -9,7 +17,8 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
+  font-family: Helvetica, Arial, Verdana, "Trebuchet MS"; 
+  // "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
   background-color: $pageBackgroundColor;
   color: $pageDefaultColor;
   margin: 0px;
@@ -29,9 +38,8 @@ body {
   button {
     background-color: $buttonBackgroundColor;
     color: $formDefaultColor;
-
-    :disabled {
-      background-color: $buttonDisabledBgColor;
-    }
+  }
+  button:disabled {
+    background-color: $buttonDisabledBgColor;
   }
 }

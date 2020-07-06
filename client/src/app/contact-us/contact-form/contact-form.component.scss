@@ -3,53 +3,77 @@
 
 form {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 5px;
   color: $formDefaultColor;
   font-size: 21px;
   justify-content: center;
 
-  .text-input {
-    display: flex;
-    flex-direction: column;
-
-    // padding-top: 10px;
-    // padding-bottom: 10px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // margin-top: 20px;
-    // margin-right: 60px;
-    // margin-bottom: 40px;
-
-
-    padding-top: 5px;
-    padding-right: 40px;
-    padding-bottom: 5px;
-    padding-left: 40px;
+  .field-set {
+    display: grid;
+    grid-template:
+      " first-name      last-name       " auto
+      " job-title       organization    " auto
+      " phone-number    email-address   " auto
+      " address         address         " auto
+      " comment-message comment-message " auto
+      / 500px           500px           ;
+    grid-gap: 10px;
     background-color: $formBackgroundColor;
+    padding: 40px;
 
-    %input-format {
-      // width: 100%;
+    .first-name {
+      grid-area: first-name;
+    }
+    .last-name {
+      grid-area: last-name;
+    }
+    .job-title {
+      grid-area: job-title;
+    }
+    .organization {
+      grid-area: organization;
+    }
+    .phone-number {
+      grid-area: phone-number;
+    }
+    .email-address {
+      grid-area: email-address;
+    }
+    .address {
+      grid-area: address;
+    }
+    .comment-message {
+      grid-area: comment-message;
+    }
+
+
+    .text-input {
+      display: flex;
+      flex-direction: column;
+
       padding-top: 10px;
       padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 0px;
-      margin-top: 20px;
-      margin-right: 0px;
-      // margin-bottom: 40px;
-    }
-    input {
-      @extend %input-format;
+      padding-left: 20px;
+      padding-right: 20px;
 
-    }
-    textarea {
-      @extend %input-format;
-      border: 1px outset $formBackgroundColor;
-    }
-  }
 
-  .both-columns {
-    grid-column: 1 / -1;
+      %input-format {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+      }
+      input {
+        @extend %input-format;
+      }
+      textarea {
+        @extend %input-format;
+        border: 1px outset $formBackgroundColor;
+        min-height: 5rem;
+      }
+    }
   }
 
   .submit {
@@ -65,6 +89,11 @@ form {
 
   .error-message {
     color: $errorMessagingColor;
+    background-color: $errorBackgroundColor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 575px) {
