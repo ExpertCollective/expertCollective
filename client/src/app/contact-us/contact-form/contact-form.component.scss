@@ -1,41 +1,108 @@
-.form {
+@import "../../../styles/base/palette";
+@import "../../../styles/element/form";
+
+form {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 5px;
+  color: $formDefaultColor;
+  font-size: 21px;
+  justify-content: center;
 
-  .text-input {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    margin-left: 10px;
+  .field-set {
+    display: grid;
+    grid-template:
+      " first-name      last-name       " auto
+      " job-title       organization    " auto
+      " phone-number    email-address   " auto
+      " address         address         " auto
+      " comment-message comment-message " auto
+      / 500px           500px           ;
+    grid-gap: 10px;
+    background-color: $formBackgroundColor;
+    padding: 40px;
+
+    .first-name {
+      grid-area: first-name;
+    }
+    .last-name {
+      grid-area: last-name;
+    }
+    .job-title {
+      grid-area: job-title;
+    }
+    .organization {
+      grid-area: organization;
+    }
+    .phone-number {
+      grid-area: phone-number;
+    }
+    .email-address {
+      grid-area: email-address;
+    }
+    .address {
+      grid-area: address;
+    }
+    .comment-message {
+      grid-area: comment-message;
+    }
+
+
+    .text-input {
+      display: flex;
+      flex-direction: column;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+
+      %input-format {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+      }
+      input {
+        @extend %input-format;
+      }
+      textarea {
+        @extend %input-format;
+        border: 1px outset $formBackgroundColor;
+        min-height: 5rem;
+      }
+    }
   }
 
-  .both-columns {
-    grid-column: 1 / -1;
-  }
-
-  .button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  .submit {
+    place-self: center;
+    width: 100%;
     button {
-      margin-right: 10px;
+      width: 100%;
+      font-size: 36px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
   }
 
   .error-message {
-    color: red;
+    color: $errorMessagingColor;
+    background-color: $errorBackgroundColor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 575px) {
-  .form {
+  form {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: repeat(12, 1fr);
 
-    .button {
+    .submit {
       grid-column: auto;
     }
   }
