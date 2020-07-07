@@ -16,14 +16,15 @@
             "ABOUT-US": "Acerca"
         },
         "HOME": {
-            "HEADER": "Conocimiento Aplicado",
-            "EXPLANATION": "Nuestra misión es diseminar nuevo conocimiento por medio de tres estrategias integradas:",
+            "MISSION": "convierte tu pasión en valor",
+            "Pitch": "La cooperativa Expert Collective te permite ser el cambio que deseas ver.",
             "ADVISORY": "Asesoría",
-            "SUPPORT-SCIENTIST-ENTREPRENEURS": "Apoyamos a innovadores en el proceso de desarrollo y gestión de tecnología aplicado a negocios.",
+            "ADVISORY-TAG": "Obtener confianza",
             "PRAXIS": "Práctica",
-            "CODIFY-EXPERT-KNOWLEDGE": "Producimos programas ejecutivos sobre tecnología aplicada a negocios de alto impacto.",
+            "PRAXIS-TAG": "Crea realidad",
             "VENTURES": "Ventures",
-            "BRING-CAPITAL": "Aportamos capital para generar empresas fundamentadas en conocimiento nuevo que revolucionen mercados.",
+            "VENTURES-TAG": "Hacer cambios a escala",
+            "CALL-TO-ACTION": "Como nosotros Cómo podemos ayudarte",
             "HELLO": "Hola {{value}}"
         },
         "FOOTER": {

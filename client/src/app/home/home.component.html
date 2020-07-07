@@ -1,18 +1,20 @@
-<div class="home">
-    <h1>{{ 'APP.HOME.HEADER' | translate }}</h1>
-    <p class="statement">{{ 'APP.HOME.EXPLANATION' | translate }}</p>
-    <div class="strategies">
-        <div>
-            <a routerLink="/advisory">{{ 'APP.HOME.ADVISORY' | translate }}</a>
-            <p>{{ 'APP.HOME.SUPPORT-SCIENTIST-ENTREPRENEURS' | translate }}</p>
-        </div>
-        <div>
-            <a routerLink="/praxis">{{ 'APP.HOME.PRAXIS' | translate }}</a>
-            <p>{{ 'APP.HOME.CODIFY-EXPERT-KNOWLEDGE' | translate }}</p>
-        </div>
-        <div>
-            <a routerLink="/ventures">{{ 'APP.HOME.VENTURES' | translate }}</a>
-            <p>{{ 'APP.HOME.BRING-CAPITAL' | translate }}</p>
-        </div>
-    </div>
+<h1>{{ "APP.HOME.MISSION" | translate }}</h1>
+<p class="pitch">{{ "APP.HOME.PITCH" | translate }}</p>
+<div class="strategies">
+  <div class="advisory">
+    <p>{{ "APP.HOME.ADVISORY-TAG" | translate }}</p>
+    <a routerLink="/advisory">{{ "APP.HOME.ADVISORY" | translate }}</a>
+  </div>
+  <div class="praxis">
+    <p>{{ "APP.HOME.PRAXIS-TAG" | translate }}</p>
+    <a routerLink="/praxis">{{ "APP.HOME.PRAXIS" | translate }}</a>
+  </div>
+  <div class="ventures">
+    <p>{{ "APP.HOME.VENTURES-TAG" | translate }}</p>
+    <a routerLink="/ventures">{{ "APP.HOME.VENTURES" | translate }}</a>
+  </div>
 </div>
+<a class="call-to-action" href="/contact-us">{{
+  "APP.HOME.CALL-TO-ACTION" | translate
+}}</a>
+<div class="testimonies"></div>
