@@ -16,14 +16,15 @@
             "ABOUT-US": "About"
         },
         "HOME": {
-            "HEADER": "Applied Knowledge",
-            "EXPLANATION": "We make your passion come to life.",
+            "MISSION": "turn your passion into value",
+            "PITCH": "The Expert Collective cooperative empowers you to be the change you want to see.",
             "ADVISORY": "Advisory",
-            "SUPPORT-SCIENTIST-ENTREPRENEURS": "Get expert advice on how to digitally transform your company.",
+            "ADVISORY-TAG": "Get confidence",
             "PRAXIS": "Praxis",
-            "CODIFY-EXPERT-KNOWLEDGE": "Learn-to-do digital transformation.",
+            "PRAXIS-TAG": "Create reality",
             "VENTURES": "Ventures",
-            "BRING-CAPITAL": "Turn your knowledge into a new venture.",
+            "VENTURES-TAG": "Make change at scale",
+            "CALL-TO-ACTION": "As Us How We Can Help You",
             "HELLO": "hello {{value}}"
         },
         "FOOTER": {
