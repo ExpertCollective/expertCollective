@@ -1,81 +1,85 @@
 @import "../../styles/base/palette";
 
 :host {
-  display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template:
-  " header header         header " auto
-  " pitch  pitch          pitch  " auto
-  " .      strategies     .      " auto
-  " .      call-to-action .      " auto
-  / 1fr    auto           1fr    ;
   background-image: url(../../assets/images/innovation-passion.jpeg);
   background-color: $darkGray;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-blend-mode: screen;
-  justify-items: center;
-
-  h1 {
-    grid-area: header;
-  }
-  .pitch {
-    grid-area: pitch;
-    color: $lightBlue;
-    font-size: 36px;
-  }
-  .strategies {
-    grid-area: strategies;
-    background-color: $lightBlue;
-    margin-top: 150px;
-    margin-bottom: 10px;
+  .home {
     display: grid;
-    grid-template: 
-    " advisory praxis ventures " auto
-    / 1fr      1fr    1fr      ;
+    grid-template:
+    " header header         header " auto
+    " pitch  pitch          pitch  " auto
+    " .      strategies     .      " auto
+    " .      call-to-action .      " auto
+    / 1fr    auto           1fr    ;
+    background-color: rgba($color: $lightGray, $alpha: 0.3);
+    justify-items: center;
 
-    %strategies {
-      display: grid;
-      justify-items: center;
-      padding-top: 50px;
-      padding-right: 70px;
-      padding-bottom: 50px;
-      padding-left: 40px;
+    h1 {
+      grid-area: header;
+      padding-top: 119px;
+      margin-bottom: 0px;
+    }
+    .pitch {
+      grid-area: pitch;
+      color: $lightBlue;
       font-size: 36px;
+      margin-top: 24px;
+    }
+    .strategies {
+      grid-area: strategies;
+      background-color: rgba($color: $lightBlue, $alpha: 0.7);
+      margin-top: 150px;
+      margin-bottom: 10px;
+      display: grid;
+      grid-template: 
+      " advisory praxis ventures " auto
+      / 1fr      1fr    1fr      ;
 
-      a {
-        text-decoration: none;
-        font-size: 18px;
+      %strategies {
+        display: grid;
+        justify-items: center;
+        padding-top: 50px;
+        padding-right: 70px;
+        padding-bottom: 50px;
+        padding-left: 40px;
+        font-size: 36px;
+
+        a {
+          text-decoration: none;
+          color: $darkGray;
+          font-size: 18px;
+        }
+      }
+      .advisory {
+        grid-area: advisory;
+        @extend %strategies;
+      }
+      .praxis {
+        grid-area: praxis;
+        @extend %strategies;
+      }
+      .ventures {
+        grid-area: ventures;
+        @extend %strategies;
       }
     }
-    .advisory {
-      grid-area: advisory;
-      @extend %strategies;
+    .call-to-action {
+      grid-area: call-to-action;
+      background-color: rgba($color: $brightOrange, $alpha: 0.7);
+      color: $creamyWhite;
+      font-size: 36px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
     }
-    .praxis {
-      grid-area: praxis;
-      @extend %strategies;
-    }
-    .ventures {
-      grid-area: ventures;
-      @extend %strategies;
-    }
-  }
-  .call-to-action {
-    grid-area: call-to-action;
-    background-color: $brightOrange;
-    color: $creamyWhite;
-    font-size: 36px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-  }
 
-  @media screen and (max-width: 575px) {
+    @media screen and (max-width: 575px) {
+    }
   }
 }
