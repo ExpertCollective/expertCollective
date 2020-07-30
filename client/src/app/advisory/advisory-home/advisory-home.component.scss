@@ -16,7 +16,6 @@
     background-color: $creamyWhite;
     color: $lightBlue;
     display: grid;
-    grid-template-rows: 80px 1fr;
     justify-items: center;
     ul {
       list-style-type: none;
@@ -31,7 +30,6 @@
     grid-area: industries-we-serve;
     color: $lightGray;
     display: grid;
-    grid-template-rows: 80px 1fr;
     justify-items: center;
     ul {
       list-style-type: none;
