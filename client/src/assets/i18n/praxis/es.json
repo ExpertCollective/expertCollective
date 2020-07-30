@@ -1,12 +1,10 @@
 {
   "PRAXIS": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective Cooperative",
-      "CURRENT-PAGE": "Praxis"
-    },
-    "HEADER": "Praxis",
+    "HEADER": "Crearlo",
     "DICTIONARY": {
-      "DEFINITION": "Praxis <i>formal</i>",
+      "DEFINITION": "Praxis",
+      "TYPE": "sustantivo",
+      "FORMAL": "formal",
       "FIRST": "Teoría y práctica, combinada:",
       "FIRST.FIRST": "Práctica de arte y método científico",
       "FIRST.SECOND": "Práctica de conductas productivas",

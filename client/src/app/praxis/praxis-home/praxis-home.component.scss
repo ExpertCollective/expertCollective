@@ -1,23 +1,26 @@
-.paxis {
-  .breadcrumb {
-    a {
-      color: black;
+@import "../../../styles/base/palette";
+
+:host {
+  display: grid;
+  justify-items: center;
+
+  ul {
+    list-style-type: none;
+  }
+  .dictionary {
+    background-color: $creamyWhite;
+
+    .definition {
+      background-color: $lightGray;
+      color: $creamyWhite;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      .formal {
+        font-style: italic;
+      }
     }
-  }
-  h1 {
-    padding-right: 30px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    text-align: center;
-  }
-  .definition {
-    margin-right: 30px;
-    margin-left: 30px;
-    background-color: lightgrey;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
     .source {
       font-style: italic;
     }
@@ -34,8 +37,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top-style: solid;
-    border-top-width: thin;
     div {
       margin-right: 20px;
       margin-left: 20px;

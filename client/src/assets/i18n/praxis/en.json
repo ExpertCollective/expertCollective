@@ -1,12 +1,10 @@
 {
   "PRAXIS": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective",
-      "CURRENT-PAGE": "Praxis"
-    },
-    "HEADER": "Praxis",
+    "HEADER": "Create It",
     "DICTIONARY": {
-      "DEFINITION": "Praxis noun <i>formal</i>",
+      "DEFINITION": "Praxis",
+      "TYPE": "noun",
+      "FORMAL": "formal",
       "FIRST": "action, practice: such as",
       "FIRST.FIRST": "exercise or practice of an art, science, or skill",
       "FIRST.SECOND": "customary practice or conduct",
