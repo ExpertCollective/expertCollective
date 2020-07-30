@@ -1,19 +1,15 @@
 {
     "ADVISORY": {
-        "BREADCRUMB": {
-            "HOME": "Expert Collective Cooperative",
-            "CURRENT-PAGE": "Asesoría"
-        },
-        "HEADER": "Ayudamos a líderes empresariales y tecnológicos impulsar el valor económico de sus organizaciones por medio de gerencia estratégica.",
+        "HEADER": "Obtenga confianza con el asesoramiento de expertos",
         "QUOTE": "Expert Collective Cooperative nos iluminó el camino a seguir para negociar el contrato más importante de nuestra empresa.",
         "WHAT-WE-KNOW": {
             "HEADER": "Lo que hacemos",
-            "DIGITAL-BUSINESS-TRANSFORMATION": "Transformación digital de negocios y data science",
-            "INNOVATION-MANAGEMENT": "Gestión de la innovación",
-            "NEW-VENTURE-FORMATION": "Formación y gestión de viveros y nuevas empresas"
+            "DIGITAL-BUSINESS-TRANSFORMATION": "Transformación digital",
+            "INNOVATION-MANAGEMENT": "Gestión de la innovación digital",
+            "NEW-VENTURE-FORMATION": "Nueva formación y coaching empresarial"
         },
         "INDUSTRIES-WE-SERVE": {
-            "HEADER": "Industrias que servimos",
+            "HEADER": "A quién servimos",
             "APPLICATION-SOFTWARE": "Aplicaciones de software",
             "EDUCATION": "Educación",
             "INDUSTRIAL-MACHINERY": "Maquinaria industrial",

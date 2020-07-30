@@ -1,26 +1,47 @@
-.advisory {
-  .breadcrumb {
-    a {
-      color: black;
-    }
-  }
+@import "../../../styles/base/palette";
+
+:host {
+  display: grid;
+  grid-template: 
+    " header       header              " auto
+    " what-we-know industries-we-serve " auto
+    " what-we-know industries-we-serve " auto
+    / 50%          50%                 ;
+
   h1 {
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    text-align: center;
+    grid-area: header;
   }
-  .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-top-style: solid;
-    border-top-width: thin;
-    div {
-      margin-right: 20px;
-      margin-left: 20px;
+  .what-we-know {
+    grid-area: what-we-know;
+    background-color: $creamyWhite;
+    color: $lightBlue;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    justify-items: center;
+    ul {
+      list-style-type: none;
+    }
+    a {
+      color: $brightOrange;
+      text-decoration: none;
     }
   }
+
+  .industries-we-serve {
+    grid-area: industries-we-serve;
+    color: $lightGray;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    justify-items: center;
+    ul {
+      list-style-type: none;
+      color: $creamyWhite;
+    }
+  }
+  li {
+    padding-bottom: 20px;
+  }
+
   @media screen and (max-width: 575px) {
     .links {
       flex-direction: column;
