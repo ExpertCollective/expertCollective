@@ -9,22 +9,27 @@
   }
   .dictionary {
     background-color: $creamyWhite;
-    width: 500px;
+    width: 45rem;
     .definition {
       display: grid;
       grid-template-columns: 1fr auto auto;
-      grid-gap: 20px;
+      grid-gap: 1rem;
       background-color: $lightGray;
+      font-size: 2.2rem;
       color: $creamyWhite;
-      padding-top: 10px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-      padding-left: 20px;
+      padding-top: 1.8rem;
+      padding-right: 2.3rem;
+      padding-bottom: 1.8rem;
+      padding-left: 2.3rem;
+      .vocab {
+        text-transform: uppercase;
+      }
       .formal {
         font-style: italic;
         border-left-color: $lightBlue;
         border-left-width: medium;
         border-left-style: solid;
+        padding-left: 1.2rem;
       }
     }
     // .source {
@@ -32,9 +37,9 @@
     // }
   }
   .apply-learn {
-    margin-right: 80px;
-    margin-bottom: 30px;
-    margin-left: 80px;
+    margin-right: 5rem;
+    margin-bottom: 1.875rem;
+    margin-left: 5rem;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
@@ -44,11 +49,11 @@
     flex-direction: row;
     justify-content: space-around;
     div {
-      margin-right: 20px;
-      margin-left: 20px;
+      margin-right: 1.25rem;
+      margin-left: 1.25rem;
     }
   }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 35.938rem) {
     .programs {
       flex-direction: column;
     }
