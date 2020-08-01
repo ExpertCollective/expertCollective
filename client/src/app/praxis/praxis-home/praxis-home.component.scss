@@ -9,8 +9,11 @@
   }
   .dictionary {
     background-color: $creamyWhite;
-
+    width: 500px;
     .definition {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      grid-gap: 20px;
       background-color: $lightGray;
       color: $creamyWhite;
       padding-top: 10px;
@@ -19,11 +22,14 @@
       padding-left: 20px;
       .formal {
         font-style: italic;
+        border-left-color: $lightBlue;
+        border-left-width: medium;
+        border-left-style: solid;
       }
     }
-    .source {
-      font-style: italic;
-    }
+    // .source {
+    //   font-style: italic;
+    // }
   }
   .apply-learn {
     margin-right: 80px;
