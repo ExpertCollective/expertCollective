@@ -4,9 +4,6 @@
   display: grid;
   justify-items: center;
 
-  ul {
-    list-style-type: none;
-  }
   .dictionary {
     background-color: $creamyWhite;
     width: 45rem;
@@ -32,9 +29,43 @@
         padding-left: 1.2rem;
       }
     }
-    // .source {
-    //   font-style: italic;
-    // }
+    ol {
+      list-style: none;
+      // margin-left: 0rem;
+      li {
+        counter-increment: custom;
+      }
+      li::before {
+        content: counter(custom) " ";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        padding-right: 1rem;
+      }
+      li::first-child {
+        counter-reset: custom;
+      }
+      ul {
+        list-style: none;
+        li {
+          counter-increment: none;
+        }
+        li::before {
+          content: url("../../../assets/images/rocket-launch-outline.svg");
+        }
+      }
+    }
+    li {
+      color: $lightBlue;
+      font-size: 3rem;
+      span {
+        color: $darkGray;
+        font-size: 1rem;
+        display: inline;
+        vertical-align: middle;
+      }
+    }
+
   }
   .apply-learn {
     margin-right: 5rem;
@@ -51,6 +82,9 @@
     div {
       margin-right: 1.25rem;
       margin-left: 1.25rem;
+    }
+    ul {
+      list-style-type: none;
     }
   }
   @media screen and (max-width: 35.938rem) {
