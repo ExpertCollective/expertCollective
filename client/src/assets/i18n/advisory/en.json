@@ -1,19 +1,15 @@
 {
     "ADVISORY" : {
-        "BREADCRUMB": {
-            "HOME": "Expert Collective",
-            "CURRENT-PAGE": "Advisory"
-        },
-        "HEADER": "Get expert advice on how to digitally transform your company.",
+        "HEADER": "Get Confidence with Expert Advice",
         "QUOTE": "Experts from the collective helped us transform our culture to one where learning leads to change.",
         "WHAT-WE-KNOW": {
-            "HEADER": "What we know",
-            "DIGITAL-BUSINESS-TRANSFORMATION": "Digital Business Transormation and Data Science",
-            "INNOVATION-MANAGEMENT": "Digital Innovation Management",
-            "NEW-VENTURE-FORMATION": "New Venture Formation and Management"
+            "HEADER": "What We Know",
+            "DIGITAL-BUSINESS-TRANSFORMATION": "Digital transormation",
+            "INNOVATION-MANAGEMENT": "Digital innovation management",
+            "NEW-VENTURE-FORMATION": "New venture formation & coaching"
         },
         "INDUSTRIES-WE-SERVE": {
-            "HEADER": "Industries we serve",
+            "HEADER": "Who We serve",
             "APPLICATION-SOFTWARE": "Application Software",
             "EDUCATION": "Education",
             "INDUSTRIAL-MACHINERY": "Industrial Machinery",

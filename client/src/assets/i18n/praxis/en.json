@@ -1,30 +1,29 @@
 {
   "PRAXIS": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective",
-      "CURRENT-PAGE": "Praxis"
-    },
-    "HEADER": "Praxis",
+    "HEADER": "Create It",
     "DICTIONARY": {
-      "DEFINITION": "Praxis noun <i>formal</i>",
+      "DEFINITION": "Praxis",
+      "TYPE": "noun",
+      "FORMAL": "formal",
       "FIRST": "action, practice: such as",
       "FIRST.FIRST": "exercise or practice of an art, science, or skill",
       "FIRST.SECOND": "customary practice or conduct",
       "SECOND": "practical application of a theory.",
       "SOURCE": "Merriam-Webster Dictionary"
     },
-    "EXPLANATION": "Learn-to-do digital transformation.",
+    "EXPLANATION": "By Learning it",
     "PROGRAMS": {
       "ONLINE-PROGRAMS": {
-        "HEADER": "Online Programs",
+        "HEADER": "Solo",
         "MICRO-LEARNING": "Micro learning",
         "EXECUTIVE-LEARNING": "Executive learning",
-        "PROFESSIONAL-TECHNICAL-LEARNING": "Professional and technical learning"
+        "PROFESSIONAL-TECHNICAL-LEARNING": "Professional & technical learning"
       },
       "BLENDED-PROGRAMS": {
-        "HEADER": "Blended Programs",
-        "BLENDED-BOOTCAMPS": "Blended bootcamps",
-        "BLENDED-WORKSHOPS": "Blended workshops"
+        "HEADER": "Community",
+        "BOOTCAMPS": "Bootcamps",
+        "WORKSHOPS": "Workshops",
+        "VIRTUAL": "Webinars & virtual lectures"
       },
       "ON-LOCATION-PROGRAMS": {
         "HEADER": "On-location Programs",

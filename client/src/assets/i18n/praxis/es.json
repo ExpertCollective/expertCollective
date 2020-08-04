@@ -1,30 +1,29 @@
 {
   "PRAXIS": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective Cooperative",
-      "CURRENT-PAGE": "Praxis"
-    },
-    "HEADER": "Praxis",
+    "HEADER": "Crearlo",
     "DICTIONARY": {
-      "DEFINITION": "Praxis <i>formal</i>",
+      "DEFINITION": "Praxis",
+      "TYPE": "sustantivo",
+      "FORMAL": "formal",
       "FIRST": "Teoría y práctica, combinada:",
       "FIRST.FIRST": "Práctica de arte y método científico",
       "FIRST.SECOND": "Práctica de conductas productivas",
       "SECOND": "Aplicación práctica de teorías.",
       "SOURCE": "Diccionario Merriam-Webster"
     },
-    "EXPLANATION": "Aplica lo que aprendes con nuestros programas para ejecutivos",
+    "EXPLANATION": "Al aprenderlo",
     "PROGRAMS": {
       "ONLINE-PROGRAMS": {
-        "HEADER": "Programas en linea",
+        "HEADER": "Solo",
         "MICRO-LEARNING": "Micro aprendizaje",
         "EXECUTIVE-LEARNING": "Aprendizaje ejecutivo",
         "PROFESSIONAL-TECHNICAL-LEARNING": "Aprendizaje profesional y técnico."
       },
       "BLENDED-PROGRAMS": {
-        "HEADER": "Programas combinados",
-        "BLENDED-BOOTCAMPS": "Bootcamps mezclados",
-        "BLENDED-WORKSHOPS": "Talleres"
+        "HEADER": "Comunidad",
+        "BOOTCAMPS": "Bootcamps",
+        "WORKSHOPS": "Talleres",
+        "VIRTUAL": "Seminarios web y conferencias virtuales"
       },
       "ON-LOCATION-PROGRAMS": {
         "HEADER": "Programas in-situ",

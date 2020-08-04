@@ -1,11 +1,11 @@
 @import "../../styles/base/palette";
 
 :host {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0.625rem;
   grid-template:
     " header             header             header             " auto
     " content            content            content            " auto
@@ -20,24 +20,26 @@
 
   h1 {
     grid-area: header;
+    padding-top: 9rem;
   }
 
   .content {
     grid-area: content;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
   }
 
   .content-label {
     grid-area: content-label;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
+    margin-top: 0rem;
   }
   .your-passion-ideas {
     grid-area: your-passion-ideas;
     background-color: $lightGray;
     color: $creamyWhite;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: lighter;
     display: grid;
     place-content: center;
@@ -47,23 +49,23 @@
     background-color: $lightGray;
     color: $creamyWhite;
     display: grid;
-    justify-items: center;
+    justify-items: left;
     align-content: start;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    font-size: 24px;
+    padding-top: 3.125rem;
+    padding-right: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 3.125rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     .title {
-      font-size: 36px;
-      font-weight: normal; 
-      margin-bottom: 50px;
+      font-size: 2.25rem;
+      font-weight: bold; 
+      margin-bottom: 3.125rem;
     }
   }
 
   %between-columns {
-    margin-right: 15px;
+    margin-right: 0.938rem;
   }
 
   .advisory {
@@ -84,7 +86,7 @@
 
   .statement {
     grid-area: statement;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
 }

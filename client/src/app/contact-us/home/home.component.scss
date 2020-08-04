@@ -2,18 +2,20 @@
   display: grid;
   justify-items: center;
   h1 {
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-left: 50px;
+    padding-top: 9rem;
+    padding-right: 3.125rem;
+    padding-bottom: 1.25rem;
+    padding-left: 3.125rem;
+    margin-bottom: 1rem;
   }
   .explanation {
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    margin: 20px;
+    padding-top: 1.857rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.857rem;
+    padding-left: 1.25rem;
+    margin: 1.25rem;
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
   }
   div {
     display: grid;

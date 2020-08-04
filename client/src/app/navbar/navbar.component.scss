@@ -4,9 +4,9 @@
   display: grid;
   grid-template: " menu-nav icon";
   background-color: $midGray;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
+  padding-top: 0.938rem;
+  padding-bottom: 0.938rem;
+  padding-left: 1.857rem;
   .icon {
     display: none;
     align-self: start;
@@ -17,7 +17,7 @@
     font-size: x-large;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 35.938rem) {
   .navbar .icon {
     display: block;
   }

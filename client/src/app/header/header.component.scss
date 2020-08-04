@@ -3,9 +3,9 @@
 :host {
   background-color: $creamyWhite;
   color: $darkGray;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.875rem;
   .logo {
     a {
       width: fit-content;
@@ -18,29 +18,29 @@
 
       .logo-name {
         text-transform: uppercase;
-        font-size: 36px;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-bottom: 10px;
+        font-size: 2.25rem;
+        padding-top: 1.25rem;
+        padding-left: 1.25rem;
+        padding-bottom: 0.625rem;
       }
 
       .logo-cooperative {
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 1.5rem;
         align-self: end;
-        padding-bottom: 11px;
-        padding-left: 11px;
+        padding-bottom: 0.688rem;
+        padding-left: 0.688rem;
       }
 
       .logo-tagline {
-        font-size: 21px;
-        padding-left: 20px;
+        font-size: 1.313rem;
+        padding-left: 1.25rem;
       }
 
       .screen-reader {
         border: 0;
-        clip: rect(1px, 1px, 1px, 1px);
-        height: 1px;
+        clip: rect(0.063rem, 0.063rem, 0.063rem, 0.063rem);
+        height: 0.063rem;
         overflow: hidden;
         padding: 0;
         position: absolute;
