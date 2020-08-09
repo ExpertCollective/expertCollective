@@ -1,11 +1,7 @@
 {
   "VENTURES": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective",
-      "CURRENT-PAGE": "Ventures"
-    },
     "HEADER": "Ventures",
-    "EXPLANATION": "Turn your knowledge into a new venture.",
+    "EXPLANATION": "Transform your knowledge into product or service.",
     "PROJECTS": {
       "HEADER": "Projects",
       "NAME": "Name",
@@ -18,10 +14,9 @@
       "DESCRIPTION": "Description"
     },
     "APPROACH": {
-      "HEADER": "Approach",
-      "EXPLANATION": "We build founding teams, deploy capital and give advice.",
+      "HEADER": "Our Scaled Approach",
+      "EXPLANATION": "We build founding teams, deploy capital, and give advice.",
       "OUR-PROCESS": {
-        "HEADER": "Our process:",
         "IDENTIFY-UNIQUE-INSIGHT": "Generate unique insights",
         "UNDERSTAND-LEADERSHIP-NEEDS": "Determine leadership needs",
         "ASSEMBLE-TEAM": "Assemble team",
