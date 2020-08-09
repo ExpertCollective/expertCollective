@@ -1,37 +1,47 @@
-.venture-projects {
+@import "../../../styles/main.scss";
+
+:host {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
+  width: 100%;
+  background-color: rgba($color: $lightGray, $alpha: 0.7);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   .projects {
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    width: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-top: 0.7rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.7rem;
+    margin-left: 0.3rem;
+    width: 13rem;
+    color: $creamyWhite;
     .name {
-      border-top-style: solid;
-      border-right-style: solid;
-      border-left-style: solid;
-      border-width: thin;
-      padding: 10px;
+      background-color: $darkGray;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
       font-weight: bold;
-    }
-    .stage {
-      border-top-style: solid;
-      border-right-style: solid;
-      border-bottom-style: solid;
-      border-left-style: solid;
-      border-width: thin;
-      padding: 10px;
       text-align: center;
     }
     .description {
-      border-right-style: solid;
-      border-bottom-style: solid;
-      border-left-style: solid;
-      border-width: thin;
-      padding: 10px;
+      background-color: $creamyWhite;
+      color: $darkGray;
+      padding-top: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    .stage {
+      background-color: $midGray;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      text-align: center;
     }
   }
 }
