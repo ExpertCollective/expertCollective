@@ -2,11 +2,11 @@
 
 :host {
   display: grid;
-  grid-template: 
+  grid-template:
     " header       header              " auto
     " what-we-know industries-we-serve " auto
     " what-we-know industries-we-serve " auto
-    / 50%          50%                 ;
+    / 50% 50%;
 
   h1 {
     grid-area: header;
@@ -15,10 +15,15 @@
     grid-area: what-we-know;
     background-color: $creamyWhite;
     color: $lightBlue;
+    font-size: 2.3rem;
     display: grid;
     justify-items: center;
     ul {
       list-style-type: none;
+      font-size: 1.7rem;
+      li::before {
+        content: url("../../../assets/images/rocket-launch-outline.svg");
+      }
     }
     a {
       color: $brightOrange;
@@ -29,15 +34,17 @@
   .industries-we-serve {
     grid-area: industries-we-serve;
     color: $lightGray;
+    font-size: 2.3rem;
     display: grid;
     justify-items: center;
     ul {
       list-style-type: none;
       color: $creamyWhite;
+      font-size: 1.7rem;
     }
   }
   li {
-    padding-bottom: 20px;
+    padding-bottom: 1.5rem;
   }
 
   @media screen and (max-width: 575px) {
