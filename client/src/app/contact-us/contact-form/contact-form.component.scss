@@ -1,10 +1,9 @@
-@import "../../../styles/base/palette";
-@import "../../../styles/element/form";
+@import "../../../styles/main.scss";
 
 form {
   display: grid;
-  grid-template-rows: auto auto;
-  grid-gap: 0.313rem;
+  grid-template-rows: auto auto auto;
+  grid-gap: 0.5rem;
   color: $formDefaultColor;
   font-size: 1.313rem;
   justify-content: center;
@@ -84,6 +83,22 @@ form {
       font-size: 2.25rem;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
+    }
+  }
+
+  .server-error {
+    place-self: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+    span {
+      display: block;
+      color: $errorMessagingColor;
+      background-color: $errorBackgroundColor;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
     }
   }
 

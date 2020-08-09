@@ -33,6 +33,7 @@
       "TRYING-TO-ACHIEVE-PLACEHOLDER": "Quiero ...",
       "TRYING-TO-ACHIEVE-REQUIRED": "Debe completar el campo",
       "MISSING-FIELDS": "A algunos campos les falta información",
+      "ERROR-OCCURRED": "Se produjo un error, inténtelo de nuevo o envíe un correo electrónico a: support@expertcollective.org",
       "SUBMIT": "Iniciar conversación"
     }
   }

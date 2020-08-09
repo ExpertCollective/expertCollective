@@ -156,40 +156,39 @@
         </div>
       </div>
     </div>
-  <div class="comment-message text-input">
-    <label for="commentMessage"
-      >{{ "CONTACT-US.FORM.TRYING-TO-ACHIEVE" | translate }}
-    </label>
-    <textarea
-      id="commentMessage"
-      formControlName="commentMessage"
-      required
-      [attr.placeholder]="
-        'CONTACT-US.FORM.TRYING-TO-ACHIEVE-PLACEHOLDER' | translate
-      "
-    ></textarea>
-    <div
-      *ngIf="
-        contactUsForm.controls.commentMessage.invalid &&
-        (contactUsForm.controls.commentMessage.dirty ||
-          contactUsForm.controls.commentMessage.touched)
-      "
-    >
-      <div class="error-message">
-        {{ "CONTACT-US.FORM.TRYING-TO-ACHIEVE-REQUIRED" | translate }}
+    <div class="comment-message text-input">
+      <label for="commentMessage"
+        >{{ "CONTACT-US.FORM.TRYING-TO-ACHIEVE" | translate }}
+      </label>
+      <textarea
+        id="commentMessage"
+        formControlName="commentMessage"
+        required
+        [attr.placeholder]="
+          'CONTACT-US.FORM.TRYING-TO-ACHIEVE-PLACEHOLDER' | translate
+        "
+      ></textarea>
+      <div
+        *ngIf="
+          contactUsForm.controls.commentMessage.invalid &&
+          (contactUsForm.controls.commentMessage.dirty ||
+            contactUsForm.controls.commentMessage.touched)
+        "
+      >
+        <div class="error-message">
+          {{ "CONTACT-US.FORM.TRYING-TO-ACHIEVE-REQUIRED" | translate }}
+        </div>
       </div>
     </div>
   </div>
-</div>
-
   <div class="submit">
     <button type="submit" [disabled]="!contactUsForm.valid">
       {{ "CONTACT-US.FORM.SUBMIT" | translate }}
     </button>
   </div>
-  <div>
-    <span class="error-message">{{
-      errorMessage ? ("CONTACT-US.FORM.MISSING-FIELDS" | translate) : ""
+  <div class="server-error">
+    <span *ngIf="errorMessage">{{
+      "CONTACT-US.FORM." + errorMessage | translate
     }}</span>
   </div>
 </form>

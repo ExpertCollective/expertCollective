@@ -33,6 +33,7 @@
       "TRYING-TO-ACHIEVE-PLACEHOLDER": "I want to ...",
       "TRYING-TO-ACHIEVE-REQUIRED": "Must fill out field",
       "MISSING-FIELDS": "Some fields are missing information",
+      "ERROR-OCCURRED": "An error occurred, please try again or email: support@expertcollective.org",
       "SUBMIT": "Start Conversation"
     }
   }

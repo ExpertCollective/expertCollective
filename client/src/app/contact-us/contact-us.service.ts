@@ -46,8 +46,10 @@ export class ContactUsService {
           return data.success;
         }),
         catchError((err: HttpErrorResponse) => {
-          console.log(`Logging Interceptor: ${err.error.message}`);
-          return of(new HttpResponse({ body: { message: err.error.message } }));
+          console.log(`Error: ${err.error}`);
+          console.log(`Message: ${err.message}`);
+          console.log(`Status: ${err.status} StatusText: ${err.statusText}`);
+          return of(err);
         })
       );
   }
