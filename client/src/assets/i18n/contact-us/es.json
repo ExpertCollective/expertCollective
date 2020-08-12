@@ -1,9 +1,5 @@
 {
   "CONTACT-US": {
-    "BREADCRUMB": {
-      "HOME": "Colectivo Experto",
-      "CURRENT-PAGE": "Contacta con nosotros"
-    },
     "HEADER": "Contacta con nosotros",
     "EXPLANATION": "Trabajamos con líderes de la industria que desean impulsar el cambio digital.",
     "FORM": {
@@ -33,6 +29,7 @@
       "TRYING-TO-ACHIEVE-PLACEHOLDER": "Quiero ...",
       "TRYING-TO-ACHIEVE-REQUIRED": "Debe completar el campo",
       "MISSING-FIELDS": "A algunos campos les falta información",
+      "ERROR-OCCURRED": "Se produjo un error, inténtelo de nuevo o envíe un correo electrónico a: support@expertcollective.org",
       "SUBMIT": "Iniciar conversación"
     }
   }

@@ -1,9 +1,5 @@
 {
   "CONTACT-US": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective",
-      "CURRENT-PAGE": "Contact Us"
-    },
     "HEADER": "Contact Us",
     "EXPLANATION": "We work with Industry leaders who want to drive digital change.",
     "FORM": {
@@ -33,6 +29,7 @@
       "TRYING-TO-ACHIEVE-PLACEHOLDER": "I want to ...",
       "TRYING-TO-ACHIEVE-REQUIRED": "Must fill out field",
       "MISSING-FIELDS": "Some fields are missing information",
+      "ERROR-OCCURRED": "An error occurred, please try again or email: support@expertcollective.org",
       "SUBMIT": "Start Conversation"
     }
   }
