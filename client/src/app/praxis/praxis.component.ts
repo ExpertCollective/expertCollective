@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../home/language.service';
 
 @Component({
   selector: 'app-praxis',
@@ -8,12 +9,14 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class PraxisComponent implements OnInit {
 
-  constructor(translate: TranslateService) {
+  constructor(
+    languageService: LanguageService,
+    translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language
-    translate.setDefaultLang('en');
+    translate.setDefaultLang(languageService.lang);
 
     // the lang to use, if the lang isn't available, it will use the current loader to get them
-    translate.use('en');
+    translate.use(languageService.lang);
   }
 
   ngOnInit() {
