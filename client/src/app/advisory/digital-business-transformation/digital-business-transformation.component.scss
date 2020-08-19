@@ -1,43 +1,42 @@
-.digital-bus-tran {
-  .breadcrumb {
-    a {
-      color: black;
-    }
+@import "../../../styles/main.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $creamyWhite;
+  h1 {
+    color: $darkGray;
   }
-  .main {
+  .help-leaders {
+    text-decoration: none;
+    color: $creamyWhite;
+    background-color: $brightOrange;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin: 20px;
+    border-radius: 29px;
+    font-size: x-large;
+  }
+  .sectors {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    .help-leaders {
-      text-decoration: none;
-      color: white;
-      background-color: rgb(67, 1, 128);
-      padding-top: 30px;
-      padding-right: 20px;
-      padding-bottom: 30px;
-      padding-left: 20px;
-      margin: 20px;
-      border-radius: 29px;
-      font-size: x-large;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top-style: solid;
+    border-top-width: thin;
+    div {
+      margin: 15px;
     }
-    .sectors {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      border-top-style: solid;
-      border-top-width: thin;
-      div {
-        margin: 15px;
-      }
-      h2 {
-        background-color: rgb(99, 95, 102);
-        color: white;
-        border-radius: 19px;
-        font-size: larger;
-        padding: 10px;
-        text-align: center;
-      }
+    h2 {
+      background-color: rgb(99, 95, 102);
+      color: white;
+      border-radius: 19px;
+      font-size: larger;
+      padding: 10px;
+      text-align: center;
     }
   }
 }
