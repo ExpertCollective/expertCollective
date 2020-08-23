@@ -16,15 +16,15 @@
             "ABOUT-US": "Acerca"
         },
         "HOME": {
-            "MISSION": "convierte tu pasión en valor",
-            "Pitch": "La cooperativa Expert Collective te permite ser el cambio que deseas ver.",
+            "MISSION": "Donde tu pasión da frutos",
+            "PITCH": "Expert Collective te impulsa a hacer el cambio que deseas ver",
             "ADVISORY": "Asesoría",
-            "ADVISORY-TAG": "Obtener confianza",
+            "ADVISORY-TAG": "Gana confianza",
             "PRAXIS": "Práctica",
-            "PRAXIS-TAG": "Crea realidad",
+            "PRAXIS-TAG": "Aprende fundamentos",
             "VENTURES": "Ventures",
-            "VENTURES-TAG": "Hacer cambios a escala",
-            "CALL-TO-ACTION": "Como nosotros Cómo podemos ayudarte",
+            "VENTURES-TAG": "Lanza tu solución",
+            "CALL-TO-ACTION": "¿Preguntas? Mándanos una nota",
             "HELLO": "Hola {{value}}"
         },
         "FOOTER": {
@@ -33,16 +33,16 @@
         },
         "ABOUT-US": {
             "HEADER": "Acerca",
-            "CONTENT": "",
-            "CONTENT-LABEL": "",
-            "ADVISORY": "Advisory",
+            "CONTENT": "Te damos dinero, relaciones y conocimiento para transformar tus ideas visionarias en projectos de alto impacto",
+            "CONTENT-LABEL": "Usamos 3 estrategias que se refuerzan mutuamente:",
             "YOUR-PASSIONS-IDEAS": "Tu pasión, tus ideas",
-            "CONNECT-SCIENTIST-ENTERPRENUERS": "Connect with scientists and enterprenuers",
+            "ADVISORY": "Asesoría",
+            "CONNECT-SCIENTIST-ENTERPRENUERS": "Asóciate con científicos y emprendedores",
             "PRAXIS": "Praxis",
-            "CODIFY-PACKAGE": "Codify & package your knowledge for others to learn",
+            "CODIFY-PACKAGE": "Aprende teorías de vanguardia a través de la práctica",
             "VENTURES": "Ventures",
-            "GET-CAPITAL": "Get capital to form new cooperatives & enterprises",
-            "EXPLANATION": "La cooperativa Expert Collective es una cooperativa propiedad de miembros que busca cerrar la brecha entre empresarios y expertos académicos. Nos esforzamos por permitir el acceso a los mejores expertos en campos de vanguardia a la comunidad empresarial que puede financiar e implementar esos avances."
+            "GET-CAPITAL": "Recibe dinero para desarrollar tu proyecto",
+            "EXPLANATION": "Expert Collective es una cooperativa que cierra la brecha entre investigación y su impacto"
         }
     }
 }

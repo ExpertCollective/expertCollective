@@ -1,23 +1,23 @@
 {
   "PRAXIS": {
-    "HEADER": "Crearlo",
+    "HEADER": "Materializa lo aprendido",
     "DICTIONARY": {
       "DEFINITION": "Praxis",
-      "TYPE": "sustantivo",
-      "FORMAL": "formal",
-      "FIRST": "Teoría y práctica, combinada:",
-      "FIRST.FIRST": "Práctica de arte y método científico",
-      "FIRST.SECOND": "Práctica de conductas productivas",
-      "SECOND": "Aplicación práctica de teorías.",
-      "SOURCE": "Diccionario Merriam-Webster"
+      "TYPE": "nombre",
+      "FORMAL": "femenino",
+      "FIRST": "Acción y reflección en práctica:",
+      "FIRST.FIRST": "Ejercicio o práctica de un arte, ciencia o abilidad",
+      "FIRST.SECOND": "Prácticas de constumbre",
+      "SECOND": "Aplicación práctica de una teoría",
+      "SOURCE": "Diccionario Merriam-Webster, Real Academia Española"
     },
-    "EXPLANATION": "Al aprenderlo",
+    "EXPLANATION": "Aprende a tu manera",
     "PROGRAMS": {
       "ONLINE-PROGRAMS": {
         "HEADER": "Solo",
         "MICRO-LEARNING": "Micro aprendizaje",
         "EXECUTIVE-LEARNING": "Aprendizaje ejecutivo",
-        "PROFESSIONAL-TECHNICAL-LEARNING": "Aprendizaje profesional y técnico."
+        "PROFESSIONAL-TECHNICAL-LEARNING": "Aprendizaje profesional y técnico"
       },
       "BLENDED-PROGRAMS": {
         "HEADER": "Comunidad",
@@ -26,7 +26,8 @@
         "VIRTUAL": "Seminarios web y conferencias virtuales"
       },
       "ON-LOCATION-PROGRAMS": {
-        "HEADER": "Programas in-situ",
+        "HEADER": "Internacional",
+        "COVID": "Actualmente no ofrecemos programas presenciales por la pandemia de COVID-19",
         "IN-COUNTRY-INTENSIVE": "Programas intensivos en tu país",
         "SPEECHES-AND-LECTURES": "Discursos y conferencias",
         "CLIENT-VISITS": "Visitas de nuestros expertos a tus clientes"

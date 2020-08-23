@@ -1,7 +1,7 @@
 {
   "VENTURES": {
-    "HEADER": "Ventures",
-    "EXPLANATION": "Transforme su conocimiento en producto o servicio.",
+    "HEADER": "Startups",
+    "EXPLANATION": "Transforma tus ideas en productos o servicios del alto impacto",
     "PROJECTS": {
       "HEADER": "Proyectos",
       "NAME": "Nombre",
@@ -14,13 +14,13 @@
       "DESCRIPTION": "Descripción"
     },
     "APPROACH": {
-      "HEADER": "Nuestro enfoque a escala",
-      "EXPLANATION": "Creamos equipos fundadores y los apoyamos con asesoramiento y capital.",
+      "HEADER": "Te ayudamos a escalar",
+      "EXPLANATION": "Construimos el equipo contigo y te damos dinero para arrancar",
       "OUR-PROCESS": {
-        "IDENTIFY-UNIQUE-INSIGHT": "Identificamos a gente con una visión única y valiosa",
-        "UNDERSTAND-LEADERSHIP-NEEDS": "Estudiamos las necesidades de liderazgo",
+        "IDENTIFY-UNIQUE-INSIGHT": "Identificamos gente con visión",
+        "UNDERSTAND-LEADERSHIP-NEEDS": "Evaluamos tu capacidad de liderar, crecer y aprender",
         "ASSEMBLE-TEAM": "Armamos equipos efectivos",
-        "SECURE-FUNDING": "Proveemos financiamiento"
+        "SECURE-FUNDING": "Damos dinero"
       }
     }
   }
