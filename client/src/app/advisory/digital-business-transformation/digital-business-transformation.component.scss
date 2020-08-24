@@ -13,14 +13,46 @@
     color: $creamyWhite;
     background-color: $brightOrange;
     padding-top: 30px;
-    padding-right: 20px;
+    padding-right: 150px;
     padding-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 150px;
     margin: 20px;
-    border-radius: 29px;
     font-size: x-large;
   }
   .sectors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top-style: solid;
+    border-top-width: thin;
+    background-color: $lightBlue;
+    width: 100%;
+    margin-bottom: 30px;
+    div {
+      margin: 15px;
+    }
+    color: $creamyWhite;
+    .title {
+      background-color: $darkGray;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      margin: 0;
+      font-weight: bold;
+      text-align: center;
+    }
+    .details {
+      background-color: $creamyWhite;
+      color: $darkGray;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      margin: 0;
+    }
+  /*   .sectors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,6 +69,8 @@
       font-size: larger;
       padding: 10px;
       text-align: center;
-    }
+     }
+  */
+  
   }
 }
