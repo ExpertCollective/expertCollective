@@ -1,6 +1,6 @@
 :host {
-  min-height: 100%;
+  height: 100%;
   display: grid;
-  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 100%;
 }
