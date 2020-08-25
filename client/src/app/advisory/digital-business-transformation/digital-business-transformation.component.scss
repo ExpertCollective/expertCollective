@@ -1,38 +1,35 @@
 @import "../../../styles/main.scss";
 
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  justify-items: center;
   background-color: $creamyWhite;
+  height: 100%;
   h1 {
     color: $darkGray;
-  }
-  .help-leaders {
-    text-decoration: none;
-    color: $creamyWhite;
-    background-color: $brightOrange;
-    padding-top: 30px;
-    padding-right: 150px;
-    padding-bottom: 30px;
-    padding-left: 150px;
-    margin: 20px;
-    font-size: x-large;
   }
   .sectors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     border-top-style: solid;
     border-top-width: thin;
     background-color: $lightBlue;
-    width: 100%;
-    margin-bottom: 30px;
-    div {
-      margin: 15px;
-    }
     color: $creamyWhite;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    div {
+      margin-right: 0.3rem;
+      margin-left: 0.3rem;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      width: 20rem;
+    }
     .title {
       background-color: $darkGray;
       padding-top: 1rem;
@@ -49,28 +46,36 @@
       padding-top: 1rem;
       padding-right: 1rem;
       padding-bottom: 1rem;
-      padding-left: 1rem;
+      padding-left: 2.3rem;
       margin: 0;
+      min-height: 20rem;
+      list-style-type: none;
+      li {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
     }
-  /*   .sectors {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-top-style: solid;
-    border-top-width: thin;
-    div {
-      margin: 15px;
+  }
+  .help-leaders {
+    text-decoration: none;
+    text-align: center;
+    color: $creamyWhite;
+    background-color: $brightOrange;
+    padding-top: 30px;
+    padding-right: 150px;
+    padding-bottom: 30px;
+    padding-left: 150px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    width: 60%;
+  }
+  .navigate-to-next {
+    color: $brightOrange;
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+    span {
+      padding-left: 1rem;
     }
-    h2 {
-      background-color: rgb(99, 95, 102);
-      color: white;
-      border-radius: 19px;
-      font-size: larger;
-      padding: 10px;
-      text-align: center;
-     }
-  */
-  
   }
 }
