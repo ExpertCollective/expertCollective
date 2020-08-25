@@ -17,7 +17,7 @@
         },
         "HOME": {
             "MISSION": "turn your passion into value",
-            "PITCH": "The Expert Collective cooperative empowers you to be the change you want to see.",
+            "PITCH": "The Expert Collective cooperative empowers you to be the change you want to see",
             "ADVISORY": "Advisory",
             "ADVISORY-TAG": "Get confidence",
             "PRAXIS": "Praxis",
@@ -33,16 +33,16 @@
         },
         "ABOUT-US": {
             "HEADER": "About Us",
-            "CONTENT": "We provide the relationships and knowledge to transform your passion and visionary ideas into value-centered ventures.",
+            "CONTENT": "We provide the relationships and knowledge to transform your passion and visionary ideas into value-centered ventures",
             "CONTENT-LABEL": "We empower you through 3 distinct yet integrated strategies:",
             "YOUR-PASSIONS-IDEAS": "YOUR PASSIONS & IDEAS",
             "ADVISORY": "Advisory",
             "CONNECT-SCIENTIST-ENTERPRENUERS": "Connect with scientists and enterprenuers",
             "PRAXIS": "Praxis",
-            "CODIFY-PACKAGE": "Codify & package your knowledge for others to learn",
+            "CODIFY-PACKAGE": "Learn leading theories through practice",
             "VENTURES": "Ventures",
-            "GET-CAPITAL": "Get capital to form new cooperatives & enterprises",
-            "EXPLANATION": "The Expert Collective cooperative is a member-owned coop that seeks to bridge the gap between entrepreneurs and academic experts. We strive to allow access to top Experts in cutting edge fields to the business community that can fund and implement those breakthroughs."
+            "GET-CAPITAL": "Get money for your project",
+            "EXPLANATION": "Expert Collective is a member-owned Coop that bridges the gap between research and impact"
         }
     }
 }

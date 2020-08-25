@@ -1,32 +1,32 @@
 {
     "ADVISORY": {
-        "HEADER": "Obtenga confianza con el asesoramiento de expertos",
-        "QUOTE": "Expert Collective Cooperative nos iluminó el camino a seguir para negociar el contrato más importante de nuestra empresa.",
+        "HEADER": "Gana confianza con consejos de expertos",
+        "QUOTE": "Expert Collective nos iluminó el camino a seguir para negociar el contrato más importante de nuestra empresa.",
         "WHAT-WE-KNOW": {
-            "HEADER": "Lo que hacemos",
-            "DIGITAL-BUSINESS-TRANSFORMATION": "Transformación digital",
-            "INNOVATION-MANAGEMENT": "Gestión de la innovación digital",
-            "NEW-VENTURE-FORMATION": "Nueva formación y coaching empresarial"
+            "HEADER": "Nuestra experiencia",
+            "DIGITAL-BUSINESS-TRANSFORMATION": "Transformación digital de negocios",
+            "INNOVATION-MANAGEMENT": "Gestión de la innovación",
+            "NEW-VENTURE-FORMATION": "Formación de nuevos proyectos y empresas"
         },
         "INDUSTRIES-WE-SERVE": {
-            "HEADER": "A quién servimos",
+            "HEADER": "Industrias que dominamos",
             "APPLICATION-SOFTWARE": "Aplicaciones de software",
             "EDUCATION": "Educación",
-            "INDUSTRIAL-MACHINERY": "Maquinaria industrial",
+            "INDUSTRIAL-MACHINERY": "Procesos industriales",
             "LIFE-SCIENCES": "Biotecnología",
             "MEDICAL-DEVICES": "Dispositivos médicos"
         },
         "DIGITAL-BUSINESS-TRANSFORMATION": {
             "HEADER": "Expertos en transformación digital de negocios",
-            "EXPLANATION": "Ayudamos a los líderes empresariales a dominar la disrupción digital.",
+            "EXPLANATION": "Te ayudamos a dominar la disrupción digital",
             "BLOCKCHAIN": {
                 "HEADER": "Blockchain",
-                "PUBLIC-PRIVATE": "Uso de Blockchains públicas y privadas",
+                "PUBLIC-PRIVATE": "Diseño de blockchains públicas y privadas",
                 "DEPLOYMENT-BLOCKCHAIN": "Implementación de blockchain",
                 "ARCHITECTURE-DECENTRALIZED": "Arquitectura de sistemas descentralizados."
             },
             "CYBER-SECURITY": {
-                "HEADER": "Seguridad cibernética",
+                "HEADER": "Ciberseguridad",
                 "DETERRANTS": "Estrategias de disuasión",
                 "MITIGATION": "Estrategias de mitigación",
                 "CYBER-PHYSICAL": "Sistemas ciberfísicos"
@@ -34,19 +34,19 @@
             "CLOUD-COMPUTING": {
                 "HEADER": "Computación en la nube",
                 "MODULARIZATION": "Modularización",
-                "SERVERLESS-FUNCTIONS": "Funciones sin servidor",
+                "SERVERLESS-FUNCTIONS": "Funciones lambda (sin servidor)",
                 "RESTFUL-ARCHITECTURE": "Arquitectura RESTful empresarial"
             },
             "DATA-SCIENCE": {
-                "HEADER": "Data science",
+                "HEADER": "Ciencia de Datos",
                 "BIG-DATA": "Big data",
                 "GEOSPACIAL-DATA": "Datos geoespaciales",
-                "REAL-TIME-DATA": "Data a tiempo real"
+                "REAL-TIME-DATA": "Data en tiempo real"
             },
             "VIRTUAL-AUGMENTED-REALITY": {
                 "HEADER": "Realidad virtual y aumentada (XR)",
-                "HUMAN-MACHINE-INTERFACE": "Interfaz hombre-máquina",
-                "ENGAGEMENT-BEHAVIOR-CHANGE": "Interacción y cambio de comportamiento",
+                "HUMAN-MACHINE-INTERFACE": "Interfase hombre-máquina",
+                "ENGAGEMENT-BEHAVIOR-CHANGE": "Interacción y cambio de hábitos",
                 "AVATARS-IDENTITY": "Avatares e identidad"
             }
         },
@@ -57,24 +57,24 @@
                 "CURRENT-PAGE": "Gestión de la innovación"
             },
             "HEADER": "Gestión de la innovación",
-            "EXPLANATION": "Promover ideas nuevas y disruptivas que conduzcan a avances significativos.",
+            "EXPLANATION": "Convierte ideas en impacto",
             "R-D-PIPELINES": {
-                "HEADER":"Pipelines de I + D",
+                "HEADER":"Portafolios de traslación de I + D",
                 "PROJECT-IDENTIFICATION": "Identificación y generación de proyectos",
-                "MOTIVATIONS-REWARDS": "Incentivos para innovación",
-                "RESEARCH-COLLABORATIONS": "Colaboraciones de investigación y exploración externa"
+                "MOTIVATIONS-REWARDS": "Incentivos para la ejecución de la innovación",
+                "RESEARCH-COLLABORATIONS": "Cooperación con universidades"
             },
             "CORPORATE-VENTURING": {
-                "HEADER": "Corporate Ventures",
+                "HEADER": "Proyectos corporativos de innovación",
                 "TARGET-SCREENING": "Selección de proyectos",
                 "INCENTIVE-MANAGEMENT": "Manejo de incentivos",
                 "COMMUNITY-BUILDING": "Desarrollo de comunidades"
             },
             "TALENT-DEVELOPMENT": {
-                "HEADER": "Desarrollo y contratación de talento",
+                "HEADER": "Reclutamiento, selección y desarrollo de talento",
                 "STRESS-TESTING-TEAMS": "Gestión de equipos de alto desempeño",
                 "ACCOUNTABILITY-ORGANIZATIONS": "Responsabilidad individual",
-                "FROM-STORMING-TO-PERFORMING": "Desde mediocridad hasta desempeño"
+                "FROM-STORMING-TO-PERFORMING": "Mejora de desempeño y control de caos"
             }
         },
         "VENTURE-FORMATION": {
@@ -83,16 +83,16 @@
                 "ADVISORY": "Asesoría",
                 "CURRENT-PAGE": "Formación de empresas"
             },
-            "HEADER": "Nuevas empresas",
-            "EXPLANATION": "Coaching centrado en el fundador para construir empresas efectivos.",
+            "HEADER": "Nuevos proyectos",
+            "EXPLANATION": "Te apoyamos en la creación de proyectos basados en tus ideas",
             "BUSINESS-DEVELOPMENT": {
-                "HEADER": "Desarrollo de negocios",
-                "SALES-TEAM-MANAGEMENT": "Dirección del equipo de ventas.",
+                "HEADER": "Validación de modelos de negocio",
+                "SALES-TEAM-MANAGEMENT": "Organización de ventas",
                 "SALES-PROCESS-ENABLEMENT": "Procesos de ventas",
-                "NEGOTIATION-SUPPORT": "Apoyo a negociaciones de acuerdos y contratos"
+                "NEGOTIATION-SUPPORT": "Pautas para negociaciones de acuerdos y contratos"
             },
             "ACTIVE-COACHING": {
-                "HEADER": "Coaching activo",
+                "HEADER": "Entrenamiento activo",
                 "ONE-ON-ONES": "Sesiones personalizadas con gente clave",
                 "MEASUREMENT-INDIVIDUAL-CONTRIBUTIONS": "Medición de aportes individuales",
                 "ORGANIZATIONAL-COOPERATION": "Cooperación organizacional"

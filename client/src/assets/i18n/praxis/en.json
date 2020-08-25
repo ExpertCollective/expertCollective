@@ -27,6 +27,7 @@
       },
       "ON-LOCATION-PROGRAMS": {
         "HEADER": "On-location Programs",
+        "COVID": "Currently not offering on-location programs due to the COVID-19 pandemic",
         "IN-COUNTRY-INTENSIVE": "In-country intensive programs",
         "SPEECHES-AND-LECTURES": "Speeches and lectures",
         "CLIENT-VISITS": "Client visits"
