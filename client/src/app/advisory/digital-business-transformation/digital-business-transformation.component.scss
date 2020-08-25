@@ -2,10 +2,10 @@
 
 :host {
   display: grid;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto auto auto 1fr;
   justify-items: center;
   background-color: $creamyWhite;
-  height: 100%;
+  padding-bottom: 20rem;
   h1 {
     color: $darkGray;
   }
@@ -26,33 +26,38 @@
     div {
       margin-right: 0.3rem;
       margin-left: 0.3rem;
+      margin-top: 1.0rem;
       display: grid;
       grid-template-rows: auto 1fr;
       width: 20rem;
-    }
-    .title {
-      background-color: $darkGray;
-      padding-top: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
-      padding-left: 1rem;
-      margin: 0;
-      font-weight: bold;
-      text-align: center;
-    }
-    .details {
-      background-color: $creamyWhite;
-      color: $darkGray;
-      padding-top: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
-      padding-left: 2.3rem;
-      margin: 0;
-      min-height: 20rem;
-      list-style-type: none;
-      li {
+      h2 {
+        background-color: $darkGray;
         padding-top: 1rem;
+        padding-right: 1rem;
         padding-bottom: 1rem;
+        padding-left: 1rem;
+        min-height: 3rem;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        display: grid;
+        align-content: center;
+      }
+      ul {
+        background-color: $creamyWhite;
+        color: $darkGray;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.3rem;
+        margin: 0;
+        min-height: 20rem;
+        list-style-type: none;
+        li {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          font-size: 1.25rem;
+        }
       }
     }
   }
@@ -69,6 +74,8 @@
     margin-bottom: 2rem;
     font-size: 2rem;
     width: 60%;
+    display: grid;
+    align-content: center;
   }
   .navigate-to-next {
     color: $brightOrange;
