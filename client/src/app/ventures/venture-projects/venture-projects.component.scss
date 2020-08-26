@@ -5,10 +5,12 @@
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
-  width: 100%;
+  // width: 100%;
   background-color: rgba($color: $lightGray, $alpha: 0.7);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   .projects {
     display: grid;
     grid-template-rows: auto 1fr auto;

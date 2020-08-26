@@ -1,7 +1,7 @@
 {
     "ADVISORY" : {
-        "HEADER": "Get Confidence with Expert Advice",
-        "QUOTE": "Experts from the collective helped us transform our culture to one where learning leads to change.",
+        "HEADER": "Believe It",
+        "QUOTE": "Experts from the collective helped us transform our culture to one where learning leads to change",
         "WHAT-WE-KNOW": {
             "HEADER": "What We Know",
             "DIGITAL-BUSINESS-TRANSFORMATION": "Digital transormation",
@@ -17,8 +17,8 @@
             "MEDICAL-DEVICES": "Medical Devices"
         },
         "DIGITAL-BUSINESS-TRANSFORMATION": {
-            "HEADER": "Digital Business Transformation Experts",
-            "EXPLANATION": "Lead digital disruption.",
+            "HEADER": "Digital Business Transformation",
+            "EXPLANATION": "Lead digital disruption",
             "BLOCKCHAIN": {
                 "HEADER": "Blockchain",
                 "PUBLIC-PRIVATE": "Use of public/private chains",
@@ -58,7 +58,7 @@
                 "CURRENT-PAGE": "Digital Innovation Management"
             },
             "HEADER": "Digital Innovation Management",
-            "EXPLANATION": "Anticipate the next radical digital transformation.",
+            "EXPLANATION": "Anticipate the next radical digital transformation",
             "R-D-PIPELINES": {
                 "HEADER": "R&D Pipelines",
                 "PROJECT-IDENTIFICATION": "Project identification and generation",
@@ -76,7 +76,8 @@
                 "STRESS-TESTING-TEAMS": "Stress-testing teams",
                 "ACCOUNTABILITY-ORGANIZATIONS": "Accountability in organizations",
                 "FROM-STORMING-TO-PERFORMING": "From storming to performing"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "You can also learn about new venture formation"
         },
         "VENTURE-FORMATION": {
             "BREADCRUMB": {
@@ -85,7 +86,7 @@
                 "CURRENT-PAGE": "Venture Formation"
             },
             "HEADER": "New Ventures",
-            "EXPLANATION": "Build successful launchpads for your startups.",
+            "EXPLANATION": "Build successful launchpads for your startups",
             "BUSINESS-DEVELOPMENT": {
                 "HEADER": "Business Development",
                 "SALES-TEAM-MANAGEMENT": "Sales team management",
@@ -97,7 +98,8 @@
                 "ONE-ON-ONES": "One-on-ones with key people",
                 "MEASUREMENT-INDIVIDUAL-CONTRIBUTIONS": "Measurement of individual contributions",
                 "ORGANIZATIONAL-COOPERATION": "Organizational cooperation"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "You can also learn about digital business transformation"
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "VENTURES": {
-    "HEADER": "Ventures",
-    "EXPLANATION": "Transform your knowledge into product or service.",
+    "HEADER": "Launch It",
+    "EXPLANATION": "Transform your knowledge into product or service",
     "PROJECTS": {
       "HEADER": "Projects",
       "NAME": "Name",
@@ -15,7 +15,7 @@
     },
     "APPROACH": {
       "HEADER": "Our Scaled Approach",
-      "EXPLANATION": "We build founding teams, deploy capital, and give advice.",
+      "EXPLANATION": "We build founding teams, deploy capital, and give advice",
       "OUR-PROCESS": {
         "IDENTIFY-UNIQUE-INSIGHT": "Generate unique insights",
         "UNDERSTAND-LEADERSHIP-NEEDS": "Determine leadership needs",

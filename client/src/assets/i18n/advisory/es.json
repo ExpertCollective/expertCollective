@@ -1,7 +1,7 @@
 {
     "ADVISORY": {
-        "HEADER": "Gana confianza con consejos de expertos",
-        "QUOTE": "Expert Collective nos iluminó el camino a seguir para negociar el contrato más importante de nuestra empresa.",
+        "HEADER": "Créelo",
+        "QUOTE": "Expert Collective nos iluminó el camino a seguir para negociar el contrato más importante de nuestra empresa",
         "WHAT-WE-KNOW": {
             "HEADER": "Nuestra experiencia",
             "DIGITAL-BUSINESS-TRANSFORMATION": "Transformación digital de negocios",
@@ -17,13 +17,13 @@
             "MEDICAL-DEVICES": "Dispositivos médicos"
         },
         "DIGITAL-BUSINESS-TRANSFORMATION": {
-            "HEADER": "Expertos en transformación digital de negocios",
+            "HEADER": "Transformación digital de negocios",
             "EXPLANATION": "Te ayudamos a dominar la disrupción digital",
             "BLOCKCHAIN": {
                 "HEADER": "Blockchain",
                 "PUBLIC-PRIVATE": "Diseño de blockchains públicas y privadas",
                 "DEPLOYMENT-BLOCKCHAIN": "Implementación de blockchain",
-                "ARCHITECTURE-DECENTRALIZED": "Arquitectura de sistemas descentralizados."
+                "ARCHITECTURE-DECENTRALIZED": "Arquitectura de sistemas descentralizados"
             },
             "CYBER-SECURITY": {
                 "HEADER": "Ciberseguridad",
@@ -49,7 +49,7 @@
                 "ENGAGEMENT-BEHAVIOR-CHANGE": "Interacción y cambio de hábitos",
                 "AVATARS-IDENTITY": "Avatares e identidad"
             },
-            "NAVIGATE-TO-NEXT-SECTION": "También puede aprender sobre la gestión de la innovación digital"
+            "NAVIGATE-TO-NEXT-SECTION": "También puedes aprender sobre la gestión de la innovación digital"
         },
         "INNOVATION-MANAGEMENT": {
             "BREADCRUMB": {
@@ -76,7 +76,8 @@
                 "STRESS-TESTING-TEAMS": "Gestión de equipos de alto desempeño",
                 "ACCOUNTABILITY-ORGANIZATIONS": "Responsabilidad individual",
                 "FROM-STORMING-TO-PERFORMING": "Mejora de desempeño y control de caos"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "Tambien puedes aprender a formar empresas"
         },
         "VENTURE-FORMATION": {
             "BREADCRUMB": {
@@ -97,7 +98,8 @@
                 "ONE-ON-ONES": "Sesiones personalizadas con gente clave",
                 "MEASUREMENT-INDIVIDUAL-CONTRIBUTIONS": "Medición de aportes individuales",
                 "ORGANIZATIONAL-COOPERATION": "Cooperación organizacional"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "También puedes aprender sobre transformación digital"
         }
     }
 }
