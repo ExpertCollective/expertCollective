@@ -3,7 +3,9 @@
 :host {
   display: grid;
   justify-items: center;
-
+  padding-bottom: 15rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   .dictionary {
     background-color: $creamyWhite;
     width: 45rem;
@@ -77,9 +79,9 @@
     color: $lightGray;
   }
   .programs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
     div {
       padding-top: 1rem;
       padding-right: 4rem;
@@ -88,16 +90,23 @@
       margin-right: 1.25rem;
       margin-left: 1.25rem;
       background-color: $lightGray;
-      color: $creamyWhite;
-      
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0rem;
-      li {
-        padding-bottom: 1rem;
+      color: $creamyWhite;    
+      h3 {
+        padding: .5rem;
+        color: $brightOrange;
+        background-color: $creamyWhite;
+      }    
+
+      ul {
+        list-style-type: none;
+        padding-left: 0rem;
+        li {
+          font-size: 1.25rem;
+          padding-bottom: 1rem;
+        }
       }
     }
+
   }
   @media screen and (max-width: 35.938rem) {
     .programs {

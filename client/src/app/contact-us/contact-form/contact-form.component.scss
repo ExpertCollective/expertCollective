@@ -3,11 +3,11 @@
 form {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-gap: 0.5rem;
+  grid-gap: 2.5rem;
   color: $formDefaultColor;
   font-size: 1.313rem;
   justify-content: center;
-
+  padding-bottom: 15rem;
   .field-set {
     display: grid;
     grid-template:
@@ -20,7 +20,6 @@ form {
     grid-gap: 0.625rem;
     background-color: $formBackgroundColor;
     padding: 2.5rem;
-
     .first-name {
       grid-area: first-name;
     }
@@ -56,13 +55,13 @@ form {
       padding-left: 1.25rem;
       padding-right: 1.25rem;
 
-
       %input-format {
         padding-top: 0.625rem;
         padding-bottom: 0.625rem;
         padding-left: 0.625rem;
         padding-right: 0.625rem;
         margin-top: 0.938rem;
+        font-size: 1.25rem;
       }
       input {
         @extend %input-format;

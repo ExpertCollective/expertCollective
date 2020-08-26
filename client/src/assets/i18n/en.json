@@ -16,15 +16,15 @@
             "ABOUT-US": "About"
         },
         "HOME": {
-            "MISSION": "turn your passion into value",
+            "MISSION": "Turn your passion into value",
             "PITCH": "The Expert Collective cooperative empowers you to be the change you want to see",
             "ADVISORY": "Advisory",
-            "ADVISORY-TAG": "Get confidence",
+            "ADVISORY-TAG": "Confidence",
             "PRAXIS": "Praxis",
-            "PRAXIS-TAG": "Create reality",
+            "PRAXIS-TAG": "Truth",
             "VENTURES": "Ventures",
-            "VENTURES-TAG": "Make change at scale",
-            "CALL-TO-ACTION": "As Us How We Can Help You",
+            "VENTURES-TAG": "Impact",
+            "CALL-TO-ACTION": "We can help you",
             "HELLO": "hello {{value}}"
         },
         "FOOTER": {
