@@ -31,6 +31,11 @@
       "MISSING-FIELDS": "Algunos campos requeridos faltan!",
       "ERROR-OCCURRED": "¡Oh no! Hay un error.  Trata de nuevo o envía un correo electrónico a: support@expertcollective.org",
       "SUBMIT": "Enviar mensaje"
+    },
+    "CONFIRMATION": {
+      "HEADER": "Gracias",
+      "MESSAGE": "Esperamos poder hablar con usted. ¡Nuestro correo electrónico llegará pronto!",
+      "ACTION": "Hogar"
     }
   }
 }
