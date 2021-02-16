@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+
+// @font-face {
+//   font-family: "EcHelvetica";
+//   src: url(../assets/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 66\ Medium\ It/)
+//   // src: url(../assets/Helvetica-Font/Helvetica.ttf) format("truetype"),
+//   //   url(../assets/Helvetica-Font/Helvetica-Bold.ttf) format("truetype");
+  
+// }
+
+@import "./element/page";
+@import "./element/form";
+@import "./base/palette";
+@import "./base/layout";
+
+

@@ -1,51 +1,60 @@
-<div class="paxis">
-  <nav class="breadcrumb">
-    >
-    <a routerLink="/">{{ 'PRAXIS.BREADCRUMB.HOME' | translate }}</a>
-    >
-    <span>{{ 'PRAXIS.BREADCRUMB.CURRENT-PAGE' | translate }}</span>
-  </nav>
-  <h1>{{ 'PRAXIS.HEADER' | translate }}</h1>
+<h1>{{ 'PRAXIS.HEADER' | translate }}</h1>
+<div class="dictionary">
   <div class="definition">
-    <p [innerHTML]="'PRAXIS.DICTIONARY.DEFINITION' | translate"></p>
-    <ol>
-      <li>
-        {{ 'PRAXIS.DICTIONARY.FIRST' | translate }}
-        <ol>
-          <li>{{ 'PRAXIS.DICTIONARY.FIRST.FIRST' | translate }}</li>
-          <li>{{ 'PRAXIS.DICTIONARY.FIRST.SECOND' | translate }}</li>
-        </ol>
-      </li>
-      <li>{{ 'PRAXIS.DICTIONARY.SECOND' | translate }}
-        <br />
-        <a href="https://www.merriam-webster.com/dictionary/praxis" target="_blank" class="source">{{ 'PRAXIS.DICTIONARY.SOURCE' | translate }}</a>
-      </li>
-    </ol>
+    <span class="vocab">
+      {{ 'PRAXIS.DICTIONARY.DEFINITION' | translate }}
+    </span>
+    <span>
+      {{ 'PRAXIS.DICTIONARY.TYPE' | translate }}
+    </span>
+    <span class="formal">
+      {{ 'PRAXIS.DICTIONARY.FORMAL' | translate }}
+    </span>
   </div>
-  <p class="apply-learn">{{ 'PRAXIS.EXPLANATION' | translate }}</p>
-  <div class="programs">
-    <div>
-      <h2>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.HEADER'| translate }}</h2>
+  <ol>
+    <li>
+      <span>
+        {{ 'PRAXIS.DICTIONARY.FIRST' | translate }}
+      </span>
       <ul>
-        <li>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.MICRO-LEARNING'| translate }}</li>
-        <li>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.EXECUTIVE-LEARNING'| translate }}</li>
-        <li>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.PROFESSIONAL-TECHNICAL-LEARNING'| translate }}</li>
+        <li><span>{{ 'PRAXIS.DICTIONARY.FIRST.FIRST' | translate }}</span></li>
+        <li><span>{{ 'PRAXIS.DICTIONARY.FIRST.SECOND' | translate }}</span></li>
       </ul>
-    </div>
-    <div>
-      <h2>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.HEADER'| translate }}</h2>
-      <ul>
-        <li>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.BLENDED-BOOTCAMPS'| translate }}</li>
-        <li>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.BLENDED-WORKSHOPS'| translate }}</li>
-      </ul>
-    </div>
-    <div>
-      <h2>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.HEADER'| translate }}</h2>
-      <ul>
-        <li>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.IN-COUNTRY-INTENSIVE'| translate }}</li>
-        <li>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.SPEECHES-AND-LECTURES'| translate }}</li>
-        <li>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.CLIENT-VISITS'| translate }}</li>
-      </ul>
-    </div>
+    </li>
+    <li>
+      <span>
+        {{ 'PRAXIS.DICTIONARY.SECOND' | translate }}
+      </span>
+      <!-- <br />
+      <a href="https://www.merriam-webster.com/dictionary/praxis" target="_blank" class="source">{{ 'PRAXIS.DICTIONARY.SOURCE' | translate }}</a> -->
+    </li>
+  </ol>
+</div>
+<p class="apply-learn">{{ 'PRAXIS.EXPLANATION' | translate }}</p>
+<div class="programs">
+  <div>
+    <h2>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.HEADER'| translate }}</h2>
+    <ul>
+      <li>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.MICRO-LEARNING'| translate }}</li>
+      <li>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.EXECUTIVE-LEARNING'| translate }}</li>
+      <li>{{ 'PRAXIS.PROGRAMS.ONLINE-PROGRAMS.PROFESSIONAL-TECHNICAL-LEARNING'| translate }}</li>
+    </ul>
+  </div>
+  <div>
+    <h2>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.HEADER'| translate }}</h2>
+    <ul>
+      <li>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.BOOTCAMPS'| translate }}</li>
+      <li>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.WORKSHOPS'| translate }}</li>
+      <li>{{ 'PRAXIS.PROGRAMS.BLENDED-PROGRAMS.VIRTUAL'| translate }}</li>
+    </ul>
+  </div>
+  <div>
+    <h2>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.HEADER'| translate }}</h2>
+    <h3>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.COVID' | translate }}</h3>
+    <ul>
+      <li>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.IN-COUNTRY-INTENSIVE'| translate }}</li>
+      <li>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.SPEECHES-AND-LECTURES'| translate }}</li>
+      <li>{{ 'PRAXIS.PROGRAMS.ON-LOCATION-PROGRAMS.CLIENT-VISITS'| translate }}</li>
+    </ul>
   </div>
 </div>

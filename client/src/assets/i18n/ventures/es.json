@@ -1,11 +1,7 @@
 {
   "VENTURES": {
-    "BREADCRUMB": {
-      "HOME": "Expert Collective Cooperative",
-      "CURRENT-PAGE": "Ventures"
-    },
-    "HEADER": "Ventures",
-    "EXPLANATION": "Brindamos capital y asesoría para expertos que desean transformar su conocimiento en nuevas empresas.",
+    "HEADER": "Lánzalo",
+    "EXPLANATION": "Transforma tus ideas en productos o servicios del alto impacto",
     "PROJECTS": {
       "HEADER": "Proyectos",
       "NAME": "Nombre",
@@ -18,14 +14,13 @@
       "DESCRIPTION": "Descripción"
     },
     "APPROACH": {
-      "HEADER": "Método",
-      "EXPLANATION": "Creamos equipos fundadores y los apoyamos con asesoramiento y capital.",
+      "HEADER": "Te ayudamos a escalar",
+      "EXPLANATION": "Construimos el equipo contigo y te damos dinero para arrancar",
       "OUR-PROCESS": {
-        "HEADER": "Nuestro proceso es el siguiente:",
-        "IDENTIFY-UNIQUE-INSIGHT": "Identificamos a gente con una visión única y valiosa",
-        "UNDERSTAND-LEADERSHIP-NEEDS": "Estudiamos las necesidades de liderazgo",
+        "IDENTIFY-UNIQUE-INSIGHT": "Identificamos gente con visión",
+        "UNDERSTAND-LEADERSHIP-NEEDS": "Evaluamos tu capacidad de liderar, crecer y aprender",
         "ASSEMBLE-TEAM": "Armamos equipos efectivos",
-        "SECURE-FUNDING": "Proveemos financiamiento"
+        "SECURE-FUNDING": "Damos dinero"
       }
     }
   }

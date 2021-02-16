@@ -1,29 +1,48 @@
 {
     "APP": {
         "HEADER": {
-            "LOGO": "Expert Collective Cooperative",
-            "SCREEN-READER": "Home",
-            "MENUNAV": {
-                "ADVISORY": "Asesoría",
-                "PRAXIS": "Práctica",
-                "VENTURES": "Startups",
-                "CONTACT-US": "Contáctanos"
-            }
+            "LOGO": {
+                "NAME": "Expert Collective",
+                "COOPERATIVE": "Cooperative",
+                "TAGLINE": "un recurso, una mentalidad, un catalizador"
+             },
+            "SCREEN-READER": " - Página de inicio"
+        },
+        "NAVBAR": {
+            "ADVISORY": "Asesoría",
+            "PRAXIS": "Práctica",
+            "VENTURES": "Startups",
+            "CONTACT-US": "Contáctanos",
+            "ABOUT-US": "Acerca"
         },
         "HOME": {
-            "HEADER": "Conocimiento Aplicado",
-            "EXPLANATION": "Nuestra misión es diseminar nuevo conocimiento por medio de tres estrategias integradas:",
+            "MISSION": "Donde tu pasión da frutos",
+            "PITCH": "Expert Collective te impulsa a hacer el cambio que deseas ver",
             "ADVISORY": "Asesoría",
-            "SUPPORT-SCIENTIST-ENTREPRENEURS": "Apoyamos a innovadores en el proceso de desarrollo y gestión de tecnología aplicado a negocios.",
+            "ADVISORY-TAG": "Confianza",
             "PRAXIS": "Práctica",
-            "CODIFY-EXPERT-KNOWLEDGE": "Producimos programas ejecutivos sobre tecnología aplicada a negocios de alto impacto.",
+            "PRAXIS-TAG": "Verdad",
             "VENTURES": "Ventures",
-            "BRING-CAPITAL": "Aportamos capital para generar empresas fundamentadas en conocimiento nuevo que revolucionen mercados.",
+            "VENTURES-TAG": "Impacto",
+            "CALL-TO-ACTION": "¿Preguntas? Mándanos una nota",
             "HELLO": "Hola {{value}}"
         },
         "FOOTER": {
             "ABOUT-US": "Acerca",
             "CONTACT-US": "Hablemos"
+        },
+        "ABOUT-US": {
+            "HEADER": "Acerca",
+            "CONTENT": "Te damos dinero, relaciones y conocimiento para transformar tus ideas visionarias en projectos de alto impacto",
+            "CONTENT-LABEL": "Usamos 3 estrategias que se refuerzan mutuamente:",
+            "YOUR-PASSIONS-IDEAS": "Tu pasión, tus ideas",
+            "ADVISORY": "Asesoría",
+            "CONNECT-SCIENTIST-ENTERPRENUERS": "Asóciate con científicos y emprendedores",
+            "PRAXIS": "Praxis",
+            "CODIFY-PACKAGE": "Aprende teorías de vanguardia a través de la práctica",
+            "VENTURES": "Ventures",
+            "GET-CAPITAL": "Recibe dinero para desarrollar tu proyecto",
+            "EXPLANATION": "Expert Collective es una cooperativa que cierra la brecha entre investigación y su impacto"
         }
     }
 }

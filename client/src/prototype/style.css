@@ -1,0 +1,25 @@
+.header {
+  background-color: #F9F8F3;
+  color: #463B46;
+}
+
+.navbar {
+  background-color: #605F6C;
+  color: #F9F8F3;
+}
+
+.page {
+  background-color: #B6D4DD;
+  color: #463B46;
+}
+
+.page > .page-header {
+  color: #F9F8F3;
+  height: 100px;
+}
+
+
+.footer {
+  background-color: #605F6C;
+  height: 20px;
+}

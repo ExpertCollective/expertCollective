@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ContactUsService } from '../contact-us.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-sent',
@@ -8,12 +9,14 @@ import { ContactUsService } from '../contact-us.service';
 })
 export class ContactSentComponent implements OnInit {
 
-  constructor(private contactUsService: ContactUsService) { }
+  constructor(private contactUsService: ContactUsService,
+    private router: Router) { }
 
   ngOnInit() {
   }
 
-  onClickBack() {
+  onClick() {
+    this.router.navigate(["/"]);
     this.contactUsService.clearContactInfoSent();
   }
 }

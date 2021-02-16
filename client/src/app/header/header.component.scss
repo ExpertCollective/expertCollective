@@ -1,55 +1,52 @@
-.top-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  background-color: black;
-  color: white;
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-left: 25px;
-  height: 60px;
+@import "../../styles/main.scss";
+
+:host {
+  background-color: $creamyWhite;
+  color: $darkGray;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.875rem;
   .logo {
-    font-size: 2rem;
-    font-weight: 200;
     a {
+      width: fit-content;
       text-decoration: none;
-      color: white;
+      color: $darkGray;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      justify-content: left;
+
+      .logo-name {
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        padding-top: 1.25rem;
+        padding-left: 1.25rem;
+        padding-bottom: 0.625rem;
+      }
+
+      .logo-cooperative {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        align-self: end;
+        padding-bottom: 0.688rem;
+        padding-left: 0.688rem;
+      }
+
+      .logo-tagline {
+        font-size: 1.313rem;
+        padding-left: 1.25rem;
+      }
+
+      .screen-reader {
+        border: 0;
+        clip: rect(0.063rem, 0.063rem, 0.063rem, 0.063rem);
+        height: 0.063rem;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+      }
     }
-    .screen-reader {
-      border: 0;
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-      word-wrap: normal;
-    }
-  }
-  .icon {
-    display: none;
-    border: 0;
-    background-color: black;
-    color: white;
-    font-size: x-large;
-  }
-}
-@media screen and (max-width: 575px) {
-  .top-header .icon {
-    display: block;
-  }
-}
-@media screen and (max-width: 575px) {
-  .top-header.responsive-open {
-    display: flex;
-    flex-direction: column;
-    min-height: 205px;
-  }
-  .top-header.responsive-open .icon {
-    position: absolute;
-    right: 33px;
-    top: 35px;
   }
 }

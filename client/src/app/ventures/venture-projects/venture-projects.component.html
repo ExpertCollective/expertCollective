@@ -1,7 +1,5 @@
-<div class="venture-projects">
-  <div *ngFor="let project of projects" class="projects">
-    <div class="name">{{ project.name }}</div>
-    <div class="stage">{{ 'VENTURES.PROJECTS.STAGES.' + project.stage | translate }}</div>
-    <div class="description">{{ project.description }}</div>
-  </div>
+<div *ngFor="let project of projects" class="projects">
+  <div class="name">{{ project.name }}</div>
+  <div class="description">{{ project.description }}</div>
+  <div class="stage">{{ 'VENTURES.PROJECTS.STAGES.' + project.stage | translate }}</div>
 </div>

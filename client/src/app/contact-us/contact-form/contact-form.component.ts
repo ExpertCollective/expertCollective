@@ -38,13 +38,14 @@ export class ContactFormComponent implements OnInit {
         2
       )}`
     );
-    this.contactUsService
-      .sendContactInfo(contactData)
-      .subscribe(
-        (result) =>
-          (this.errorMessage =
-            typeof result === "boolean" ? undefined : result.body.message)
-      );
-    this.contactUsForm.reset();
+    this.contactUsService.sendContactInfo(contactData).subscribe((result) => {
+      if (typeof result === "boolean") {
+        this.errorMessage = undefined;
+        this.contactUsForm.reset();
+      } else {
+        this.errorMessage =
+          result.status === 400 ? "MISSING-FIELDS" : "ERROR-OCCURRED";
+      }
+    });
   }
 }

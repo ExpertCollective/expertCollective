@@ -1,0 +1,12 @@
+@import "../../../styles/main.scss";
+
+:host {
+  width: 70%;
+
+  button {
+    width: 100%;
+    font-size: 2.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}

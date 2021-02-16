@@ -1,24 +1,30 @@
 {
     "APP": {
         "HEADER": {
-            "LOGO": "Expert Collective",
-            "SCREEN-READER": " - Home Page",
-            "MENUNAV": {
-                "ADVISORY": "Advisory",
-                "PRAXIS": "Praxis",
-                "VENTURES": "Ventures",
-                "CONTACT-US": "Contact Us"
-            }
+            "LOGO": {
+               "NAME": "Expert Collective",
+               "COOPERATIVE": "Cooperative",
+               "TAGLINE": "a resource, a mindset, a catalyst"
+            },
+            "SCREEN-READER": " - Home Page"
+        },
+        "NAVBAR": {
+            "ADVISORY": "Advisory",
+            "PRAXIS": "Praxis",
+            "VENTURES": "Ventures",
+            "CONTACT-US": "Contact",
+            "ABOUT-US": "About"
         },
         "HOME": {
-            "HEADER": "Knowledge Applied",
-            "EXPLANATION": "We pursue our mission through three distinct yet integrated strategies:",
+            "MISSION": "Turn your passion into value",
+            "PITCH": "The Expert Collective cooperative empowers you to be the change you want to see",
             "ADVISORY": "Advisory",
-            "SUPPORT-SCIENTIST-ENTREPRENEURS": "Support by connecting Scientists and Entrepreneurs in the process of  forming and running their companies.",
+            "ADVISORY-TAG": "Confidence",
             "PRAXIS": "Praxis",
-            "CODIFY-EXPERT-KNOWLEDGE": "Codify and Package Expert Knowledge into easy to digest learning experiences for anyone curious about technology and business.",
+            "PRAXIS-TAG": "Truth",
             "VENTURES": "Ventures",
-            "BRING-CAPITAL": "We bring capital to support people who want to contribute their knowledge to society through the formation of new enterprises and cooperatives.",
+            "VENTURES-TAG": "Impact",
+            "CALL-TO-ACTION": "Ask us how",
             "HELLO": "hello {{value}}"
         },
         "FOOTER": {
@@ -27,7 +33,16 @@
         },
         "ABOUT-US": {
             "HEADER": "About Us",
-            "EXPLANATION": "Expert Collective Cooperative is a member owned coop that seeks to bridge the gap between entrepreneurs and academic experts.  We strive to allow access to top Experts in cutting edge fields to the business community that can fund and implement those breakthroughs."
+            "CONTENT": "We provide the relationships and knowledge to transform your passion and visionary ideas into value-centered ventures",
+            "CONTENT-LABEL": "We empower you through 3 distinct yet integrated strategies:",
+            "YOUR-PASSIONS-IDEAS": "YOUR PASSIONS & IDEAS",
+            "ADVISORY": "Advisory",
+            "CONNECT-SCIENTIST-ENTERPRENUERS": "Connect with scientists and enterprenuers",
+            "PRAXIS": "Praxis",
+            "CODIFY-PACKAGE": "Learn leading theories through practice",
+            "VENTURES": "Ventures",
+            "GET-CAPITAL": "Get money for your project",
+            "EXPLANATION": "Expert Collective is a member-owned Coop that bridges the gap between research and impact"
         }
     }
 }

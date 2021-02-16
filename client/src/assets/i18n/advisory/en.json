@@ -1,19 +1,15 @@
 {
     "ADVISORY" : {
-        "BREADCRUMB": {
-            "HOME": "Expert Collective",
-            "CURRENT-PAGE": "Advisory"
-        },
-        "HEADER": "We support business and technology leaders drive value in their organizations through clear lines of accountability.",
-        "QUOTE": "Experts from the collective helped us transform our culture to one where learning leads to change.",
+        "HEADER": "Believe It",
+        "QUOTE": "Experts from the collective helped us transform our culture to one where learning leads to change",
         "WHAT-WE-KNOW": {
-            "HEADER": "What we know",
-            "DIGITAL-BUSINESS-TRANSFORMATION": "Digital Business Transormation and Data Science",
-            "INNOVATION-MANAGEMENT": "Innovation Management",
-            "NEW-VENTURE-FORMATION": "New Venture Formation and Management"
+            "HEADER": "What We Know",
+            "DIGITAL-BUSINESS-TRANSFORMATION": "Digital transformation",
+            "INNOVATION-MANAGEMENT": "Digital innovation management",
+            "NEW-VENTURE-FORMATION": "New venture formation & coaching"
         },
         "INDUSTRIES-WE-SERVE": {
-            "HEADER": "Industries we serve",
+            "HEADER": "Who We serve",
             "APPLICATION-SOFTWARE": "Application Software",
             "EDUCATION": "Education",
             "INDUSTRIAL-MACHINERY": "Industrial Machinery",
@@ -21,13 +17,8 @@
             "MEDICAL-DEVICES": "Medical Devices"
         },
         "DIGITAL-BUSINESS-TRANSFORMATION": {
-            "BREADCRUMB": {
-                "HOME": "Expert Collective",
-                "ADVISORY": "Advisory",
-                "CURRENT-PAGE": "Digital Business Transformation"
-            },
-            "HEADER": "Digital Business Transformation Experts",
-            "EXPLANATION": "We help organizational leaders take control of digital disruption.",
+            "HEADER": "Digital Business Transformation",
+            "EXPLANATION": "Lead digital disruption",
             "BLOCKCHAIN": {
                 "HEADER": "Blockchain",
                 "PUBLIC-PRIVATE": "Use of public/private chains",
@@ -57,16 +48,17 @@
                 "HUMAN-MACHINE-INTERFACE": "Human-machine interface",
                 "ENGAGEMENT-BEHAVIOR-CHANGE": "Engagement and behavior change",
                 "AVATARS-IDENTITY": "Avatars and identity"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "You can also learn about digital innovation management"
         },
         "INNOVATION-MANAGEMENT": {
             "BREADCRUMB": {
                 "HOME": "Expert Collective",
                 "ADVISORY": "Advisory",
-                "CURRENT-PAGE": "Innovation Management"
+                "CURRENT-PAGE": "Digital Innovation Management"
             },
-            "HEADER": "Innovation Management",
-            "EXPLANATION": "Enabling new thinking that leads to breakthroughs.",
+            "HEADER": "Digital Innovation Management",
+            "EXPLANATION": "Anticipate the next radical digital transformation",
             "R-D-PIPELINES": {
                 "HEADER": "R&D Pipelines",
                 "PROJECT-IDENTIFICATION": "Project identification and generation",
@@ -84,7 +76,8 @@
                 "STRESS-TESTING-TEAMS": "Stress-testing teams",
                 "ACCOUNTABILITY-ORGANIZATIONS": "Accountability in organizations",
                 "FROM-STORMING-TO-PERFORMING": "From storming to performing"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "You can also learn about new venture formation"
         },
         "VENTURE-FORMATION": {
             "BREADCRUMB": {
@@ -93,7 +86,7 @@
                 "CURRENT-PAGE": "Venture Formation"
             },
             "HEADER": "New Ventures",
-            "EXPLANATION": "Founder-focused coaching for building effective teams.",
+            "EXPLANATION": "Build successful launchpads for your startups",
             "BUSINESS-DEVELOPMENT": {
                 "HEADER": "Business Development",
                 "SALES-TEAM-MANAGEMENT": "Sales team management",
@@ -105,7 +98,8 @@
                 "ONE-ON-ONES": "One-on-ones with key people",
                 "MEASUREMENT-INDIVIDUAL-CONTRIBUTIONS": "Measurement of individual contributions",
                 "ORGANIZATIONAL-COOPERATION": "Organizational cooperation"
-            }
+            },
+            "NAVIGATE-TO-NEXT-SECTION": "You can also learn about digital business transformation"
         }
     }
 }

@@ -13,12 +13,13 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
-import { MenunavComponent } from "./header/menunav/menunav.component";
+import { MenunavComponent } from "./navbar/menunav/menunav.component";
 import { HomeComponent } from "./home/home.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { LogInterceptor } from "./shared/log-interceptor";
 import { SharedModule } from "./shared/shared.module";
+import { NavbarComponent } from './navbar/navbar.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -34,6 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     PageNotFoundComponent,
     AboutUsComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "expert-collective" }),

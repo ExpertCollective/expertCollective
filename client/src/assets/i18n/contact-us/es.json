@@ -1,39 +1,41 @@
 {
   "CONTACT-US": {
-    "BREADCRUMB": {
-      "HOME": "Colectivo Experto",
-      "CURRENT-PAGE": "Contacta con nosotros"
-    },
-    "HEADER": "Contacta con nosotros",
-    "EXPLANATION": "Trabajamos con líderes de la industria que desean impulsar el cambio digital.",
+    "HEADER": "Contáctanos",
+    "EXPLANATION": "Trabajamos contigo para impulsar tus ideas hacia impacto",
     "FORM": {
       "FIRST-NAME": "Nombre de pila",
       "FIRST-NAME-PLACEHOLDER": "Juan",
-      "FIRST-NAME-REQUIRED": "Se requiere el primer nombre",
+      "FIRST-NAME-REQUIRED": "Primer nombre es necesario",
       "LAST-NAME": "Apellido",
-      "LAST-NAME-PLACEHOLDER": "Smith",
-      "LAST-NAME-REQUIRED": "Apellido es requerido",
-      "TITLE": "Título",
-      "TITLE-PLACEHOLDER": "Presidente fundador",
-      "TITLE-REQUIRED": "Se requiere título de trabajo",
+      "LAST-NAME-PLACEHOLDER": "Perez",
+      "LAST-NAME-REQUIRED": "Apellido es necesario",
+      "TITLE": "Cargo",
+      "TITLE-PLACEHOLDER": "Científico jefe",
+      "TITLE-REQUIRED": "Cargo es necesario",
       "ORGANIZATION":"Organización",
       "ORGANIZATION-PLACEHOLDER": "ACME, Inc",
-      "ORGANIZATION-REQUIRED": "Se requiere organización",
-      "ADDRESS": "la dirección",
-      "ADDRESS-PLACEHOLDER": "Denver, Co, USA",
-      "ADDRESS-REQUIRED": "La dirección es necesaria",
+      "ORGANIZATION-REQUIRED": "Organización es necesaria",
+      "ADDRESS": "Dirección",
+      "ADDRESS-PLACEHOLDER": "1234 Cliff Drive, Anytown, State, USA, 56789",
+      "ADDRESS-REQUIRED": "Dirección es necesaria",
       "PHONE": "Teléfono",
-      "PHONE-PLACEHOLDER": "234-456-7890",
-      "PHONE-REQUIRED": "Se requiere número de teléfono",
+      "PHONE-PLACEHOLDER": "+34 234-456-7890",
+      "PHONE-REQUIRED": "Teléfono es necesario",
       "EMAIL": "Email",
-      "EMAIL-PLACEHOLDER": "test@example.com",
-      "EMAIL-REQUIRED": "Se requiere Dirección de correo electrónico",
-      "WHAT-INTEREST": "¿Que te interesa?",
-      "TRYING-TO-ACHIEVE": "¿Qué intentas lograr?",
-      "TRYING-TO-ACHIEVE-PLACEHOLDER": "Ingrese su respuesta aquí ...",
-      "TRYING-TO-ACHIEVE-REQUIRED": "Debe completar el campo",
-      "MISSING-FIELDS": "A algunos campos les falta información",
-      "SUBMIT": "Enviar"
+      "EMAIL-PLACEHOLDER": "jperez@acme.com",
+      "EMAIL-REQUIRED": "Correo electrónico es necesario",
+      "WHAT-INTEREST": "¿Qué intereses tienes?",
+      "TRYING-TO-ACHIEVE": "¿Cuál es tu pregunta?",
+      "TRYING-TO-ACHIEVE-PLACEHOLDER": "Quiero ...",
+      "TRYING-TO-ACHIEVE-REQUIRED": "Debes completar el mensaje",
+      "MISSING-FIELDS": "Algunos campos requeridos faltan!",
+      "ERROR-OCCURRED": "¡Oh no! Hay un error.  Trata de nuevo o envía un correo electrónico a: support@expertcollective.org",
+      "SUBMIT": "Enviar mensaje"
+    },
+    "CONFIRMATION": {
+      "HEADER": "Gracias",
+      "MESSAGE": "Esperamos poder hablar con usted. ¡Nuestro correo electrónico llegará pronto!",
+      "ACTION": "Hogar"
     }
   }
 }

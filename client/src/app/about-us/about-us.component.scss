@@ -1,0 +1,92 @@
+@import "../../styles/main.scss";
+
+:host {
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem;
+  display: grid;
+  grid-gap: 0.625rem;
+  grid-template:
+    " header             header             header             " auto
+    " content            content            content            " auto
+    " content-label      content-label      content-label      " auto
+    " your-passion-ideas your-passion-ideas your-passion-ideas " 100px
+    " advisory           praxis             ventures           " 150px
+    " advisory           praxis             ventures           " 150px
+    " advisory           praxis             ventures           " 150px
+    " statement          statement          statement          " 200px
+    / 280px              280px              280px              ;
+  justify-content: center;
+
+  h1 {
+    grid-area: header;
+    padding-top: 9rem;
+  }
+
+  .content {
+    grid-area: content;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  .content-label {
+    grid-area: content-label;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 0rem;
+  }
+  .your-passion-ideas {
+    grid-area: your-passion-ideas;
+    background-color: $lightGray;
+    color: $creamyWhite;
+    font-size: 2.25rem;
+    font-weight: lighter;
+    display: grid;
+    place-content: center;
+  }
+
+  %column {
+    background-color: $lightGray;
+    color: $creamyWhite;
+    display: grid;
+    justify-items: left;
+    align-content: start;
+    padding-top: 3.125rem;
+    padding-right: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 3.125rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    .title {
+      font-size: 2.25rem;
+      font-weight: bold; 
+      margin-bottom: 3.125rem;
+    }
+  }
+
+  %between-columns {
+    margin-right: 0.938rem;
+  }
+
+  .advisory {
+    grid-area: advisory;
+    @extend %column;
+    @extend %between-columns;
+  }
+  .praxis {
+    grid-area: praxis;
+    @extend %column;
+    @extend %between-columns;
+  }
+
+  .ventures {
+    grid-area: ventures;
+    @extend %column;
+  }
+
+  .statement {
+    grid-area: statement;
+    font-size: 1.5rem;
+  }
+
+}

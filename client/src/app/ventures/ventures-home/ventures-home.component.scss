@@ -1,57 +1,36 @@
-.ventures {
-  .breadcrumb {
-    a {
-      color: black;
-    }
+@import "../../../styles/main.scss";
+
+:host {
+  display: grid;
+  justify-items: center;
+  grid-gap: 1rem;
+  padding-bottom: 15rem;
+  h1 {
+    margin-bottom: 0rem;
   }
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      padding-right: 50px;
-      padding-bottom: 20px;
-      padding-left: 50px;
-    }
-    .explanation {
-      padding-top: 30px;
-      padding-right: 20px;
-      padding-bottom: 30px;
-      padding-left: 20px;
-      margin: 20px;
-      font-size: x-large;
-    }
-    .projects {
-      border-top-style: solid;
-      border-top-width: thin;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .approach {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-top-style: solid;
-      border-top-width: thin;
-      width: 100%;
-      .approach-explaned {
-        font-size: larger;
-        font-weight: bold;
-      }
-      .our-process {
-        font-size: smaller;
-      }
-      .process {
-        display: flex;
-        flex-direction: row;
-        li {
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-      }
+  .explanation {
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+    margin: 1.3rem;
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2.7rem;
+    color: $lightGray;
+    margin-bottom: 0rem;
+  }
+  .approach-explaned {
+    font-size: 2.1rem;
+    margin-bottom: 0rem;
+  }
+  .process {
+    list-style-type: none;
+    font-size: 2.1rem;
+    color: $creamyWhite;
+    font-weight: bolder;
+    li {
+      margin-top: 1.3rem;
+      margin-bottom: 1.3rem;
     }
   }
 }

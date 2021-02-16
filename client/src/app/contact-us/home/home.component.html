@@ -1,18 +1,10 @@
-<div class="contact-us">
-  <nav class="breadcrumb">
-    >
-    <a routerLink="/">{{ 'CONTACT-US.BREADCRUMB.HOME' | translate }}</a>
-    >
-    <span>{{ 'CONTACT-US.BREADCRUMB.CURRENT-PAGE' | translate }}</span>
-  </nav>
-  <div class="main">
-    <h1>{{ 'CONTACT-US.HEADER' | translate }}</h1>
-    <p class="explanation">{{ 'CONTACT-US.EXPLANATION' | translate }}</p>
-    <div *ngIf="!(contactInfoSent$ | async)">
-      <app-contact-form></app-contact-form>
-    </div>
-    <div *ngIf="(contactInfoSent$ | async)">
-      <app-contact-sent></app-contact-sent>
-    </div>
-  </div>
+<div *ngIf="!(contactInfoSent$ | async)">
+  <h1>{{ "CONTACT-US.HEADER" | translate }}</h1>
+  <p class="explanation">{{ "CONTACT-US.EXPLANATION" | translate }}</p>
+  <app-contact-form></app-contact-form>
+</div>
+<div *ngIf="contactInfoSent$ | async">
+  <h1>{{ "CONTACT-US.CONFIRMATION.HEADER" | translate }}</h1>
+  <p class="explanation">{{ "CONTACT-US.CONFIRMATION.MESSAGE" | translate }}</p>
+  <app-contact-sent></app-contact-sent>
 </div>
