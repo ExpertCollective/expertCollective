@@ -1,0 +1,58 @@
+version: "3"
+services:
+  web:
+    restart: unless-stopped
+    #image: expert-collective:latest
+    container_name: ecc-webapp
+    build:
+      context: ./client
+      # dockerfile: ./client/Dockerfile
+    # command: npm run build:prod
+    volumes:
+      - web-root:/usr/src/app/dist/expert-collective/browser
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    networks:
+      - ecc-network
+  webservice:
+    restart: unless-stopped
+    #image: webservice:latest
+    container_name: ecc-webservice
+    build:
+      context: ./server
+      # dockerfile: ./server/Dockerfile
+    command: npm run devRest
+    networks:
+      - ecc-network
+  nginx-proxy:
+    image: jwilder/nginx-proxy:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - web-root:/var/www/html
+      - ./client/nginx.conf:/etc/nginx/nginx.conf
+      # - vhost:/etc/nginx/vhost.d
+      # - html:/usr/share/nginx/html
+      # - certs:/etc/nginx/certs
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    # labels:
+    #   - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy"
+    depends_on:
+      - web
+      - webservice
+    # links:
+    #   - web
+    networks:
+      - ecc-network
+volumes:
+  web-root:
+
+networks:
+  ecc-network:
+    driver: bridge
+
+    # # driver: local
+    # # driver_opts:
+    # #   type: none
+    # #   device: /home/eccdeploy/expert-collective/browser/
+    # #   o: bind

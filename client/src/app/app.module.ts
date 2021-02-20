@@ -19,7 +19,8 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
 import { AboutUsComponent } from "./about-us/about-us.component";
 import { LogInterceptor } from "./shared/log-interceptor";
 import { SharedModule } from "./shared/shared.module";
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from "./navbar/navbar.component";
+import { environment } from "src/environments/environment";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,6 +49,10 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+  ],
+  providers: [
+    { provide: "BACKEND_API_URL", useValue: environment.backendApiUrl },
+    { provide: "DEFAULT_LANGUAGE", useValue: environment.defaultLanguage },
   ],
   bootstrap: [AppComponent],
 })
