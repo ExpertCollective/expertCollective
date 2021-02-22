@@ -14,7 +14,8 @@ ENV PATH="./node_modules/.bin:$PATH"
 
 # Copy the actual app's code
 COPY . .
-#RUN npm run build
-CMD [ "npm", "run", "tscRun" ]
+RUN npm run build
+
+CMD [ "npm", "run", "devRest" ]
 
 #EXPOSE 8000

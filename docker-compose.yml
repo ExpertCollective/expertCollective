@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - /server/node_modules
-      - ./server:/build3
+      - ./server:/build
     networks:
       - ecc-network
     expose:
