@@ -40,11 +40,11 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.json({
     message: err.message,
-    error: err
+    error: err,
   });
 });
 
-const server = app.listen(8000, "localhost", () => {
+const server = app.listen(8000, () => {
   const { address, port } = server.address() as AddressInfo;
   console.log("Listening on %s %s", address, port);
 });
