@@ -10,6 +10,7 @@ services:
     volumes:
       - /server/node_modules
       - ./server:/build
+      - contact-info:/contact-info
     networks:
       - ecc-network
     expose:
@@ -44,5 +45,6 @@ services:
       - ecc-network
 volumes:
   web-root:
+  contact-info:
 networks:
   ecc-network:

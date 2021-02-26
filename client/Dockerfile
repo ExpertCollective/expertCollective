@@ -1,6 +1,6 @@
 ### Stage 1: Build ###
 
-FROM gmathieu/node-browsers:3.0.0 AS compile-image
+FROM gmathieu/node-browsers:3.0.0
 
 
 # Create app directory
