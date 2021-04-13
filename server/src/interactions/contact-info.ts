@@ -15,7 +15,7 @@ export type ContactUsProperties = {
 
 export class ContactInfo {
   private expertCollectiveURL: string;
-  private contactInfoDir: string = "contact-info";
+  private contactInfoDir: string = "/contact-info";
   constructor(
     private prepEmail: PrepEmail,
     private sendEmail: SendEmail,

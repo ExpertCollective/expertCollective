@@ -49,15 +49,18 @@ use `scp` to secure copy/paste the files needed for the docker images to run on 
 
 `scp docker-compose.yml root@165.227.120.116:/home/eccdeploy`
 `scp -r controller root@165.227.120.116:/home/eccdeploy/controller`
-scp -r ./server/Dockerfile root@165.227.120.116:/home/eccdeploy/server
+`scp -r ./server/Dockerfile root@165.227.120.116:/home/eccdeploy/server`
 
-scp -r ./server/build root@165.227.120.116:/home/eccdeploy/server
+`scp -r ./server/build root@165.227.120.116:/home/eccdeploy/server`
 
 `scp nginx.conf root@165.227.120.116:/home/eccdeploy/client`
 
+`su - eccdeploy`
 Load docker images from the tar
-`docker load -i expertcollective_web.tar`
-`docker load -i expertcollective_webservice.tar`
-`docker load -i nginx.tar`
+`sudo docker load -i expertcollective_web.tar`
+`sudo docker load -i expertcollective_webservice.tar`
+`sudo docker load -i nginx.tar`
 
 `docker-compose down`
+
+`docker-compose up -d`
