@@ -16,7 +16,7 @@ services:
     expose:
       - "8000"
   client:
-    restart: unless-stopped
+    restart: "no"
     image: expertcollective_web
     # container_name: ecc-webapp
     build:
