@@ -38,27 +38,41 @@ mhart/alpine-node 13.8 33b0d13252d4 12 months ago 107MB
 gmathieu/node-browsers 3.0.0 05fc805cbaf8 2 years ago 1.37GB
 
 Save the docker images as tars
+
 `docker save -o expertcollective_webservice.tar expertcollective_webservice`
+
 `docker save -o nginx.tar nginx`
+
 `docker save -o expertcollective_web.tar expertcollective_web`
 
 use `scp` to secure copy/paste the files needed for the docker images to run on the server.
+
 `scp expertcollective_webservice.tar root@165.227.120.116:/home/eccdeploy`
+
 `scp expertcollective_web.tar root@165.227.120.116:/home/eccdeploy`
+
 `scp nginx.tar root@165.227.120.116:/home/eccdeploy`
 
 `scp docker-compose.yml root@165.227.120.116:/home/eccdeploy`
-`scp -r controller root@165.227.120.116:/home/eccdeploy/controller`
+
+`scp -r controller root@165.227.120.116:/home/eccdeploy`
+
 `scp -r ./server/Dockerfile root@165.227.120.116:/home/eccdeploy/server`
 
 `scp -r ./server/build root@165.227.120.116:/home/eccdeploy/server`
 
-`scp nginx.conf root@165.227.120.116:/home/eccdeploy/client`
+verify with : `tree -D`
+
+# `scp nginx.conf root@165.227.120.116:/home/eccdeploy/client`
 
 `su - eccdeploy`
+
 Load docker images from the tar
+
 `sudo docker load -i expertcollective_web.tar`
+
 `sudo docker load -i expertcollective_webservice.tar`
+
 `sudo docker load -i nginx.tar`
 
 `docker-compose down`
