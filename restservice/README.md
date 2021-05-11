@@ -21,8 +21,12 @@ Test to reveal where in the environment it's finding python
 
 `which python`
 
-Initial creation of Django project
+> Initial creation of Django project
+> 
+> Based on: https://docs.djangoproject.com/en/3.2/intro/tutorial01/
+> 
+> `django-admin startproject mysite`
 
-Based on: https://docs.djangoproject.com/en/3.2/intro/tutorial01/
+Run the server locally
 
-`django-admin startproject mysite`
+`python mysite/manage.py runserver`
