@@ -43,6 +43,16 @@ services:
       - client
     networks:
       - ecc-network
+  restservice:
+    restart: always
+    build:
+      context: ./restservice
+      dockerfile: Dockerfile
+    networks:
+      - ecc-network
+    expose:
+      - "9000"
+    tty: true
 volumes:
   web-root:
   contact-info:
