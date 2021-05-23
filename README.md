@@ -97,4 +97,16 @@ Explore nginx configuration:
 
 `cat nginx.conf`
 
-`Ctrl+p` & `Ctrl+q`
+To exit: `Ctrl+p` & `Ctrl+q`
+
+To check email contacts:
+
+`docker exec -it eccdeploy_webservice_1 /bin/sh`
+
+`cd ../../../`
+
+`cd contact-info/`
+
+`ls -all`
+
+`cat <filename>`
