@@ -27,6 +27,10 @@ Test to reveal where in the environment it's finding python
 > 
 > `django-admin startproject mysite`
 
+Migrate the data
+
+`python mysite/manage.py migrate`
+
 Run the server locally
 
 `python mysite/manage.py runserver`
