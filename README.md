@@ -94,3 +94,7 @@ Explore nginx configuration:
 `docker exec -it eccdeploy_nginx_1 /bin/sh`
 
 `cd etc/nginx`
+
+`cat nginx.conf`
+
+`Ctrl+p` & `Ctrl+q`
