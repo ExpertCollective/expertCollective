@@ -39,19 +39,23 @@ gmathieu/node-browsers 3.0.0 05fc805cbaf8 2 years ago 1.37GB
 
 Save the docker images as tars
 
-`docker save -o expertcollective_webservice.tar expertcollective_webservice`
+`docker save -o expertcollective_web.tar expertcollective_web`
 
 `docker save -o nginx.tar nginx`
 
-`docker save -o expertcollective_web.tar expertcollective_web`
+`docker save -o expertcollective_webservice.tar expertcollective_webservice`
+
+`docker save -o expertcollective_restservice.tar expertcollective_restservice`
 
 use `scp` to secure copy/paste the files needed for the docker images to run on the server.
-
-`scp expertcollective_webservice.tar root@165.227.120.116:/home/eccdeploy`
 
 `scp expertcollective_web.tar root@165.227.120.116:/home/eccdeploy`
 
 `scp nginx.tar root@165.227.120.116:/home/eccdeploy`
+
+`scp expertcollective_webservice.tar root@165.227.120.116:/home/eccdeploy`
+
+`scp expertcollective_restservice.tar root@165.227.120.116:/home/eccdeploy`
 
 `scp docker-compose.yml root@165.227.120.116:/home/eccdeploy`
 
@@ -60,6 +64,8 @@ use `scp` to secure copy/paste the files needed for the docker images to run on 
 `scp -r ./server/Dockerfile root@165.227.120.116:/home/eccdeploy/server`
 
 `scp -r ./server/build root@165.227.120.116:/home/eccdeploy/server`
+
+`scp -r ./restservice/Dockerfile root@165.227.120.116:/home/eccdeploy/restservice`
 
 verify with : `tree -D`
 
@@ -71,10 +77,36 @@ Load docker images from the tar
 
 `sudo docker load -i expertcollective_web.tar`
 
+`sudo docker load -i nginx.tar`
+
 `sudo docker load -i expertcollective_webservice.tar`
 
-`sudo docker load -i nginx.tar`
+`sudo docker load -i expertcollective_restservice.tar`
 
 `docker-compose down`
 
 `docker-compose up -d`
+
+`docker ps`
+
+Explore nginx configuration:
+
+`docker exec -it eccdeploy_nginx_1 /bin/sh`
+
+`cd etc/nginx`
+
+`cat nginx.conf`
+
+To exit: `Ctrl+p` & `Ctrl+q`
+
+To check email contacts:
+
+`docker exec -it eccdeploy_webservice_1 /bin/sh`
+
+`cd ../../../`
+
+`cd contact-info/`
+
+`ls -all`
+
+`cat <filename>`
