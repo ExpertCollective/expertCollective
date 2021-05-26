@@ -69,7 +69,7 @@ use `scp` to secure copy/paste the files needed for the docker images to run on 
 
 verify with : `tree -D`
 
-# `scp nginx.conf root@165.227.120.116:/home/eccdeploy/client`
+-- `scp nginx.conf root@165.227.120.116:/home/eccdeploy/client`
 
 `su - eccdeploy`
 
@@ -98,6 +98,10 @@ Explore nginx configuration:
 `cat nginx.conf`
 
 To exit: `Ctrl+p` & `Ctrl+q`
+
+or `Ctrl+d`
+
+or type `exit`
 
 To check email contacts:
 
