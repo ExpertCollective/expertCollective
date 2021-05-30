@@ -107,10 +107,10 @@ To check email contacts:
 
 `docker exec -it eccdeploy_webservice_1 /bin/sh`
 
-`cd ../../../`
-
-`cd contact-info/`
+`cd contact-info/` --> `/usr/src/app/contact-info/`
 
 `ls -all`
 
 `cat <filename>`
+
+`exit`
