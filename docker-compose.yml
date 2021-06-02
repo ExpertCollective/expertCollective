@@ -10,7 +10,7 @@ services:
     volumes:
       - /server/node_modules
       - ./server:/build
-      - contact-info:/contact-info
+      - contact-info:/usr/src/app/contact-info
     networks:
       - ecc-network
     expose:
@@ -43,16 +43,16 @@ services:
       - client
     networks:
       - ecc-network
-  # restservice:
-  #   restart: always
-  #   build:
-  #     context: ./restservice
-  #     dockerfile: Dockerfile
-  #   networks:
-  #     - ecc-network
-  #   expose:
-  #     - "9000"
-  #   tty: true
+  restservice:
+    restart: always
+    build:
+      context: ./restservice
+      dockerfile: Dockerfile
+    networks:
+      - ecc-network
+    expose:
+      - "5000"
+    tty: true
 volumes:
   web-root:
   contact-info:
