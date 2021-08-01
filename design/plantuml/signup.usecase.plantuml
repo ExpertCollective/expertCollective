@@ -1,0 +1,27 @@
+@startuml 
+title Sign up Organization and Owner
+left to right direction
+
+actor :Owner: as Owner << Human >>
+actor :Worker: as Worker << Human >>
+
+rectangle Masterly {
+  usecase (Register Organization) as registerOrg
+  usecase (Register Owner) as registerOwner
+  registerOrg -left-> registerOwner
+  usecase (Invite/register workers) as inviteWorkers
+  registerOwner -left-> inviteWorkers
+  usecase (Send invites with link to workers) as sendLinkToWorkers
+  inviteWorkers -left-> sendLinkToWorkers
+  usecase (Workers follow link\nand complete registration) as workerCompletesRegistration
+  sendLinkToWorkers -left-> workerCompletesRegistration
+}
+  Owner --> registerOrg
+  Owner --> registerOwner
+  Owner --> inviteWorkers
+  sendLinkToWorkers --> Worker
+  Worker --> workerCompletesRegistration
+
+
+!includeurl https://raw.githubusercontent.com/matthewjosephtaylor/plantuml-style/master/style.pu
+@enduml
