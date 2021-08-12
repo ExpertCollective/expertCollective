@@ -1,0 +1,30 @@
+@startuml Home
+
+actor User as U
+actor "Supplier to \nperson" as S
+actor "Client of \nperson" as C
+rectangle Home {
+    usecase "view map" as Diag
+    usecase "select a person" as Peep
+    usecase "view contributions" as Contribs
+    usecase "select a contribution" as Contrib
+    usecase "view properties" as ContribProps
+    usecase "view actors" as Actors
+}
+() "Rating" as Rating
+() "Description" as Desc
+() "Frequency" as Frec
+[Attachments] as Attach
+U --> Diag
+Diag --> Peep
+Peep --> Contribs
+Contribs --> Contrib
+Contrib --> ContribProps
+Contrib --> Actors 
+S -- Actors
+Actors -- C
+ContribProps -- Rating
+ContribProps -- Desc
+ContribProps -- Frec
+ContribProps .. Attach : Optional
+@enduml

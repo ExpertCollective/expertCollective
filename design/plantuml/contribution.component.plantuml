@@ -1,0 +1,16 @@
+@startuml
+
+class Contribution {
+    +Title
+    +Description
+    +Attachments
+    +Status
+    +Clients
+    +add()
+    +submit()
+    +edit()
+    +confirm()
+    +withdraw()
+}
+
+@enduml

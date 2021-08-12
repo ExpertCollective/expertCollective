@@ -1,0 +1,35 @@
+@startuml
+title Register Organization, Owner, and Workers Component
+skinparam componentStyle uml2
+
+interface "Browser" as Browser
+
+cloud "Digital Ocean Servers" as droplet {
+  node "Docker Containers" as docker {
+    node "nginx" as nginx {
+      component [Masterly Website] as masterlyWeb
+      component [Reverse Proxy] as reverseProxy
+    }
+    component [Angular App] as angularApp
+    masterlyWeb -> angularApp : Forms Registration
+    package "Python" as Python {
+      node "flask service" as flaskService {
+        component [Masterly service] as loa
+        component [PyDgraph] as pydgraph
+        loa --> pydgraph
+        database "Dgraph" as Dgraph {
+          component [Organizations] as Organization
+          Dgraph --> Organization
+        }
+        pydgraph --> Dgraph
+      }
+      flaskService --> loa
+    }
+    reverseProxy --> flaskService
+  }
+}
+Browser -> masterlyWeb
+Browser --> reverseProxy : /api
+
+!includeurl https://raw.githubusercontent.com/matthewjosephtaylor/plantuml-style/master/style.pu
+@enduml

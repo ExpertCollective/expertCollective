@@ -60,3 +60,16 @@ Thumbs.db
 /restservice/venv
 *.pyc
 db.sqlite3
+
+# https://flask.palletsprojects.com/en/2.0.x/tutorial/layout/ TODO: validate the following
+__pycache__/
+
+instance/
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+dist/
+build/
+*.egg-info/
