@@ -1,0 +1,49 @@
+@startuml addPerson
+
+actor "Worker" as W
+rectangle "Select colleague screen" {
+  usecase "Add/select colleague" as Colleague << Steps >>
+}
+rectangle "Define connection screen" {
+  usecase "Define work relationship" as Relationship
+  usecase "Create work product" as newProduct
+  usecase "Choose work product" as existingProduct
+  usecase "Review before submitting" as Review
+  usecase "Submit" as Submit
+}
+
+W --> Colleague : In map view
+Colleague --> Relationship : Modal or equivalent
+Relationship --> newProduct
+Relationship --> existingProduct
+newProduct --> Review
+existingProduct --> Review
+Review --> Submit
+Relationship --> Review : Goes directly \n when user needs \n something from \n colleague
+
+note left of Colleague
+    Fields include:
+    # fName, lName
+    # Title
+    # Organization (filled based 
+    on account creation)
+    # Department (optional - auto complete)
+    # email
+end note
+note right of Relationship
+    Options include: 
+    -- I give somethings to...
+    -- I need somethings from...
+    -- Both 
+    * refer to properties of
+    contribution object *
+end note
+note bottom of Submit
+    System sends 
+    email to Colleague
+end note
+note "These only apply to colleagues the User\n'gives to' or 'both'" as Note1
+
+Note1 .. newProduct
+Note1 .. existingProduct
+@enduml
